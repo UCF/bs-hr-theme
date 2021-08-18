@@ -1,0 +1,16 @@
+/*
+Theme Name: UCF Human Resources (Child Theme)
+Template: UCF-WordPress-Theme
+Author: UCF Web Communications
+Github Theme URI: https://github.com/UCF/{{My-Project}}
+Version: v0.0.0
+*/
+
+/*
+This file exists to tell WordPress what our theme name and version number are.
+It is **not** a registered stylesheet in our theme, so it is not included in
+the site's header.
+
+Style overrides should be made in scss files, located in src/scss/, then
+compiled using gulp.
+*/
