@@ -305,10 +305,28 @@
 					$title = $mypod->display('post_name');
 					$id = $mypod->display('ID');
 					$description = $mypod->display('description');
-					
+					$pod = 'team_member';
+					$limit = '300';
+					$template = 'Team Members';
+					$where = 'department.post_name=';
+					$relpage = $mypod->display('related_page_link_url');
+
+					$podsc = "[pods name=\"" . $pod . "\" limit=\"" . $limit . "\" template=\"" . $template . "\" where=\"" . $where . "'" . $title . "'\"]";
+
 					echo '<div class="orgchartinfoblock ' . $title . '">';
 					echo '<h3 class="title">' . $name . '</h3>';
 					echo $description;
+
+					if ($relpage): 
+						echo '<a href="';
+						echo $relpage;
+						echo '" class="button black" style="color:gold; margin-bottom:30px;" rel="noopener noreferrer"><img src="/wp-content/themes/UCF-WordPress-Theme-Human-Resources/img/icon_link.png" class="icon">Learn More</a>';
+					endif;
+
+					echo '<h5>Team Members</h5>';
+					echo do_shortcode($podsc);
+
+
 					echo '</div>';
 
 				}
@@ -355,7 +373,7 @@
 				<?php if( have_rows('category_data') ): ?>
 
 					<select class="custom-select fileselecthelp" id="fileselecthelp">
-						<option selected>I'm intersted in...</option>
+						<option selected>I'm interested in...</option>
 
 
 					<?php while( have_rows('category_data') ): the_row(); 

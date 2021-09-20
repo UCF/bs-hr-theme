@@ -1089,18 +1089,20 @@
 			<div class="left azdropdown col-12">
 				  <select class="custom-select fileselect" id="fileselect">
 					<option selected>Choose a category to filter by.</option>
+					<option value="additional-forms-and-documents">Additional Forms and Documents</option>
 					<option value="additional-insurance-information">Additional Insurance Information</option>
 					<option value="additional-new-employee-forms">Additional New Employee Forms</option>
+					<option value="benefits">Benefits</option>
 					<option value="cell-phone-policies">Cell Phone Policies</option>
 					<option value="child-labor-laws">Child Labor Laws</option>
+					<option value="classification-and-compensation">Classification and Compensation</option>
 					<option value="collective-bargaining-unit-classes">Collective Bargaining Unit Classes</option>
 					<option value="compensation">Compensation</option>
 					<option value="compliance">Compliance</option>
 					<option value="current-employees">Current Employees</option>
 					<option value="education">Education</option>
-					<option value="employee-relations">Employee Relations</option>
 					<option value="employee-sign-in-paperwork">Employee Sign In Paperwork</option>
-					<option value="equal-opportunity--affirmative-action">Equal Opportunity & Affirmative Action</option>
+					<option value="equal-opportunity-affirmative-action">Equal Opportunity & Affirmative Action</option>
 					<option value="general-compliance-information">General Compliance Information</option>
 					<option value="general-leave-and-attendance-information">General Leave and Attendance Information</option>
 					<option value="general-new-employee-information">General New Employee Information</option>
@@ -1108,272 +1110,1866 @@
 					<option value="general-payroll-services-information">General Payroll Services Information</option>
 					<option value="impacts-to-your-benefits">Impacts to Your Benefits</option>
 					<option value="insurance">Insurance</option>
-					<option value="leave-administration">Leave Administration</option>
+					<option value="leave-and-attendance">Leave and Attendance</option>
 					<option value="leave-and-attendance-information">Leave and Attendance Information</option>
 					<option value="leave-and-attendance-responsibilities">Leave and Attendance Responsibilities</option>
 					<option value="liaisons-and-managers">Liaisons and Managers</option>
+					<option value="liaisons-and-supervisors">Liaisons and Supervisors</option>
 					<option value="manager-resources">Manager Resources</option>
 					<option value="new-employee-information">New Employee Information</option>
+					<option value="new-employee-resources">New Employee Resources</option>
 					<option value="new-employees">New Employees</option>
+					<option value="other-forms-and-documents">Other Forms and Documents</option>
 					<option value="pay-days">Pay Days</option>
 					<option value="pay-statements-and-checks">Pay Statements and Checks</option>
+					<option value="payroll">Payroll</option>
 					<option value="payroll-resources">Payroll Resources</option>
-					<option value="payroll-services">Payroll Services</option>
+					<option value="policies-and-compliance">Policies and Compliance</option>
 					<option value="potential-benefits-changes">Potential Benefits Changes</option>
 					<option value="retired-employees">Retired Employees</option>
+					<option value="retirement-and-retirees">Retirement and Retirees</option>
 					<option value="retirement-enrollment-forms">Retirement Enrollment Forms</option>
 					<option value="sick-pool">Sick Pool</option>
-					<option value="signin-forms">Sign-in Forms</option>
+					<option value="sign-in-forms">Sign-in Forms</option>
 					<option value="support-and-services">Support and Services</option>
 					<option value="talent-acquisition">Talent Acquisition</option>
 					<option value="time-off">Time Off</option>
 					<option value="tuition-waiver-program">Tuition Waiver Program</option>
 					<option value="veterans-rights">Veterans' Rights</option>
-					<option value="w2-information">W-2 Information</option>
-					<option value="additional-forms-and-documents">Additional Forms and Documents</option>
+					<option value="w-2-information">W-2 Information</option>
 				  </select>
 			</div>
 		</div>
 		<div class="row content">
-			<div class="left col-12 catName additional-insurance-information">
-				<h3 class="title">Additional Insurance Information</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName additional-new-employee-forms">
-				<h3 class="title">Additional New Employee Forms</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName cell-phone-policies">
-				<h3 class="title">Cell Phone Policies</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName child-labor-laws">
-				<h3 class="title">Child Labor Laws</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName collective-bargaining-unit-classes">
-				<h3 class="title">Collective Bargaining Unit Classes</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName compensation">
-				<h3 class="title">Compensation</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName compliance">
-				<h3 class="title">Compliance</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName current-employees">
-				<h3 class="title">Current Employees</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName education">
-				<h3 class="title">Education</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName employee-relations">
-				<h3 class="title">Employee Relations</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName employee-sign-in-paperwork">
-				<h3 class="title">Employee Sign In Paperwork</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName equal-opportunity--affirmative-action">
-				<h3 class="title">Equal Opportunity & Affirmative Action</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName general-compliance-information">
-				<h3 class="title">General Compliance Information</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName general-leave-and-attendance-information">
-				<h3 class="title">General Leave and Attendance Information</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName general-new-employee-information">
-				<h3 class="title">General New Employee Information</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName general-pay-statement-and-check-information">
-				<h3 class="title">General Pay Statement and Check Information</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName general-payroll-services-information">
-				<h3 class="title">General Payroll Services Information</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName impacts-to-your-benefits">
-				<h3 class="title">Impacts to Your Benefits</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName insurance">
-				<h3 class="title">Insurance</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName leave-administration">
-				<h3 class="title">Leave Administration</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName leave-and-attendance-information">
-				<h3 class="title">Leave and Attendance Information</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName leave-and-attendance-responsibilities">
-				<h3 class="title">Leave and Attendance Responsibilities</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName liaisons-and-managers">
-				<h3 class="title">Liaisons and Managers</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName manager-resources">
-				<h3 class="title">Manager Resources</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName new-employee-information">
-				<h3 class="title">New Employee Information</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName new-employees">
-				<h3 class="title">New Employees</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName pay-days">
-				<h3 class="title">Pay Days</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName pay-statements-and-checks">
-				<h3 class="title">Pay Statements and Checks</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName payroll-resources">
-				<h3 class="title">Payroll Resources</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName payroll-services">
-				<h3 class="title">Payroll Services</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName retirement-enrollment-forms">
-				<h3 class="title">Retirement Enrollment Forms</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName sick-pool">
-				<h3 class="title">Sick Pool</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName signin-forms">
-				<h3 class="title">Sign-in Forms</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName support-and-services">
-				<h3 class="title">Support and Services</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName talent-acquisition">
-				<h3 class="title">Talent Acquisition</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName time-off">
-				<h3 class="title">Time Off</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName tuition-waiver-program">
-				<h3 class="title">Tuition Waiver Program</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName veterans-rights">
-				<h3 class="title">Veterans' Rights</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName w2-information">
-				<h3 class="title">W-2 Information</h3>
-				<ul class="dlList">
-					
-				</ul>
-			</div>
-			<div class="left col-12 catName additional-forms-and-documents">
-				<h3 class="title">Additional Forms and Documents</h3>
-				<ul class="dlList">
-				</ul>
-			</div>
+
+
+		<?php
+
+		$category = 'Additional Forms and Documents';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Additional Insurance Information';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Additional New Employee Forms';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Benefits';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Cell Phone Policies';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Child Labor Laws';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Classification and Compensation';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Collective Bargaining Unit Classes';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Compensation';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Compliance';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Current Employees';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Education';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Employee Sign In Paperwork';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Equal Opportunity & Affirmative Action';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'General Compliance Information';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'General Leave and Attendance Information';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'General New Employee Information';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'General Pay Statement and Check Information';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'General Payroll Services Information';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Impacts to Your Benefits';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Insurance';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Leave and Attendance';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Leave and Attendance Information';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Leave and Attendance Responsibilities';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+		<?php
+
+		$category = 'Liaisons and Managers';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'Liaisons and Supervisors';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'Manager Resources';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'New Employee Information';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'New Employee Resources';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'New Employees';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'Other Forms and Documents';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'Pay Days';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'Pay Statements and Checks';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'Payroll';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'Payroll Resources';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'Policies and Compliance';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'Potential Benefits Changes';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'Retired Employees';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'Retirement and Retirees';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'Retirement Enrollment Forms';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'Sick Pool';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'Sign-in Forms';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'Support and Services';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'Talent Acquisition';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'Time Off';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'Tuition Waiver Program';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = "Veterans Rights";
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+		
+		<?php
+
+		$category = 'W-2 Information';
+		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
+
+		$params = array(
+			limit => 9999,
+			where => "category.meta_value = '$category'",
+		);	
+
+		$pods = pods( 'forms_and_documents', $params );
+
+		if ( 0 < $pods->total() ) { 
+
+
+			echo '<div class="left col-12 catName ' . $slug . '">';
+			echo '<h3 class="title">' . $category . '</h3>';
+			echo '<ul class="dlList">';
+
+			while ( $pods->fetch() ) {
+				
+				$documentName = $pods->display('name');
+					if ($pods->display('file_upload')) {
+						$fileurl = $pods->display('file_upload');
+					} else {
+						$fileurl = $pods->display('location_url');
+					};
+
+					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						
+			}
+
+			echo '</ul>';
+			echo '</div>';
+		}
+
+		?>
+
+
+
+			
 		</div>
 	</div>
 </div>

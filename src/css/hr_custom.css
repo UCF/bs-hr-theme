@@ -705,10 +705,15 @@ ul.statistics li.fourth {
 
 /* Employee of the Month */
 .eotm .row .left img {
-    margin-top: -110px;
     position: relative;
     background: transparent;
-    margin-bottom: -200px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 360px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
 }
 
 .eotm h3.title .sub {
@@ -1867,7 +1872,7 @@ body.page-template-template-azindex .content ul li {
 }
 
 body.page-template-template-azindex .content ul li a:before {
-    content:'•';
+    content:'â€¢';
     color:black;
     font-size:30px;
     line-height:10px;
@@ -3155,4 +3160,23 @@ div#orgchartinfoblocks {
 
 .alphafilelist ul li a {
     padding: 0px !important;
+}
+
+.teammembers img.photo {
+    display: block;
+    margin: auto;
+}
+
+.orgchartinfoblock .teammembers img {
+    display: none;
+}
+
+.orgchartinfoblock .teammembers .row > div {
+    padding: 20px;
+}
+
+.orgchartinfoblock h5 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
