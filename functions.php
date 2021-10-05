@@ -32,5 +32,27 @@ add_filter( 'pods_shortcode', function( $tags )  {
 
 add_filter( 'get_the_author_description', 'do_shortcode' );
 
-
 add_image_size( 'square-sixhundred', 600, 600, true);
+
+
+/**
+
+* Disable the UCF WP Theme's template redirect overrides so that we can
+
+* define our own in this theme.
+
+*
+
+* @since 1.0.0
+
+* @author Jo Dickson
+
+*/
+
+function today_reenable_templates() {
+
+  remove_action( 'template_redirect', 'ucfwp_kill_unused_templates' );
+
+}
+
+add_action( 'after_setup_theme', 'today_reenable_templates' );
