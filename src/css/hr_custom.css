@@ -3717,3 +3717,53 @@ body.page-template-template-eotm .eotmarchive a .title {
         margin-bottom:60px;
     }
 }
+
+.teammembers .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.teammembers .row > div {
+    padding: 3%;
+}
+
+
+
+body.page-template-template-eotm .currentmonth img {
+    border-radius: 100%;
+    max-width: 300px;
+    margin-bottom: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+
+.eotmarchive h3 {
+    font-size: 30px;
+    font-family: "Gotham SSm A","Gotham SSm B","UCF Sans Serif Alt","Helvetica Neue",Arial,sans-serif;
+    text-transform: uppercase;
+}
+
+.eotmarchive h3:after {
+    content: '';
+    width: 50px;
+    height: 4px;
+    background: #ffc904;
+    display: block;
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+
+body.page-template-template-eotm .eotmarchive a .date {
+    display: none;
+}
+
+body.search .hero.container-fluid {
+    background: #e8e8e8 !important;
+    height: auto !important;
+}
