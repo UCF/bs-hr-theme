@@ -525,6 +525,14 @@
 						$('.azcontentbox .row.content > div.alphafilelist').removeClass('active');
 						$('.azcontentbox .row.content > div.alphaZ').addClass('active');
 					}); 
+
+				
+					$('select#fileselect').change(function(){ 
+						var value = $(this).val();
+						$('.azcontentbox.cat .row.content .catName').removeClass('active');
+						$('.azcontentbox.cat .row.content .catName.' + value + '').addClass('active');
+					});
+
 				});   
 
 				// Forms and Documents Category nav toggles jQuery
@@ -666,6 +674,7 @@
 					$('.azcontentbox .row.content > div.alphafilelist').removeClass('active');
 					$('.azcontentbox .row.content > div.alphaZ').addClass('active');
 				}); */
+
 		</script>
 		
 	</body>
