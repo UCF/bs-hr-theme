@@ -85,7 +85,7 @@
                 <div class="currentmonth">
                     <?php
                         $the_query = new WP_Query(array(
-                            'category_name' => 'news',
+                            'category_name' => 'employee-of-the-month',
                             'post_status' => 'publish',
                             'posts_per_page' => '1',
                         ));
@@ -94,6 +94,7 @@
                     <?php if ($the_query->have_posts()) : ?>
                         <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                             
+                            <div class="photo"><img src="<?php the_post_thumbnail_url(); ?>" /></div>
                             <div class="title"><?php the_title(); ?></div>
                             <div class="date"><?php the_date(); ?></div>
                             <div class="content"><?php the_excerpt(); ?></div>
@@ -112,13 +113,16 @@
                 <div class="eotmarchive">
                     <?php
                         $the_query = new WP_Query(array(
-                            'category_name' => 'news',
+                            'category_name' => 'employee-of-the-month',
                             'post_status' => 'publish',
                             'posts_per_page' => '13',
                         ));
                     ?>
 
                     <?php if ($the_query->have_posts()) : ?>
+
+                        <h3>Previous Winners</h3>
+                        
                         <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
                             
                             <a href="<?php the_permalink(); ?>"><div class="title"><?php the_title(); ?></div>
