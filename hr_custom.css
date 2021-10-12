@@ -476,7 +476,7 @@ body.blog {
     height: 46px;
     top: -5px;
     position: relative;
-    background: url('/wp-content•/themes/bs-hr-theme/img/icon_maglass.png') no-repeat center center #000000;
+    background: url('/wp-content/themes/bs-hr-theme/img/icon_maglass.png') no-repeat center center #000000;
 }
 
 .sideNav h3:after {
@@ -607,7 +607,7 @@ ul.navSide {
     width: 50px;
     height: 46px;
     border-radius: 0px 10px 10px 0px;
-    background: url(/wp-content•/themes/bs-hr-theme/img/icon_maglass_black.png) no-repeat center center #ffc902;
+    background: url(/wp-content/themes/bs-hr-theme/img/icon_maglass_black.png) no-repeat center center #ffc902;
     bottom: 5px;
     position: relative;
 }
