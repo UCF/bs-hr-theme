@@ -28,42 +28,42 @@ header > div.container {
 }
 
 body.page-template-template-home .hero {
-    background: url('/wp-content/themes/UCF-WordPress-Theme/img/header_home.jpg');
+    background: url('/wp-content/themes/bs-hr-theme/img/header_home.jpg');
     background-size: cover;
 }
 
 body.page-template-template-benefits .hero {
-    background: url(/wp-content/themes/UCF-WordPress-Theme/img/header_benefits.jpg);
+    background: url(/wp-content/themes/bs-hr-theme/img/header_benefits.jpg);
     background-size: cover;
 }
 
 body.page-template-template-learning  div.hero {
-    background: url(/wp-content/themes/UCF-WordPress-Theme/img/header_hrLearning.jpg);
+    background: url(/wp-content/themes/bs-hr-theme/img/header_hrLearning.jpg);
     background-size: cover;
 }
 
 body.page-template-template-talentacquisition  div.hero {
-    background: url(/wp-content/themes/UCF-WordPress-Theme/img/header_talent.jpg);
+    background: url(/wp-content/themes/bs-hr-theme/img/header_talent.jpg);
     background-size: cover;
 }
 
 body.page-template-template-classcomp div.hero {
-    background: url(/wp-content/themes/UCF-WordPress-Theme/img/header_classcomp.jpg);
+    background: url(/wp-content/themes/bs-hr-theme/img/header_classcomp.jpg);
     background-size: cover;
 }
 
 body.page-template-template-azindex div.hero {
-    background: url(/wp-content/themes/UCF-WordPress-Theme/img/header_azindex.jpg);
+    background: url(/wp-content/themes/bs-hr-theme/img/header_azindex.jpg);
     background-size: cover;
 }
 
 body.page-template-template-contact div.hero {
-    background: url(/wp-content/themes/UCF-WordPress-Theme/img/header_contact.jpg);
+    background: url(/wp-content/themes/bs-hr-theme/img/header_contact.jpg);
     background-size: cover;
 }
 
 body.page-template-template-prospectiveemployees div.hero {
-    background: url(/wp-content/themes/UCF-WordPress-Theme/img/header_prospectiveEmployees.jpg);
+    background: url(/wp-content/themes/bs-hr-theme/img/header_prospectiveEmployees.jpg);
     background-size: cover;
 }
 
@@ -324,7 +324,7 @@ body.page-template-template-inside .container-fluid.gold h3:after {
 
 
 .sideNav ul.navSide li.search {
-    background: url(/wp-content/themes/UCF-WordPress-Theme/img/buttonbg_docs.jpg) no-repeat center center;
+    background: url(/wp-content/themes/bs-hr-theme/img/buttonbg_docs.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -394,12 +394,12 @@ body.page-template-template-inside .container-fluid.gold h3:after {
 }
 
 .sideNav ul.navSide li.forms {
-    background: url(/wp-content/themes/UCF-WordPress-Theme/img/buttonbg_cpu.jpg) no-repeat center center;
+    background: url(/wp-content/themes/bs-hr-theme/img/buttonbg_cpu.jpg) no-repeat center center;
     background-size: cover;
 }
 
 .sideNav ul.navSide li.mission {
-    background: url(/wp-content/themes/UCF-WordPress-Theme/img/buttonbg_knight.jpg) no-repeat center center;
+    background: url(/wp-content/themes/bs-hr-theme/img/buttonbg_knight.jpg) no-repeat center center;
     background-size: cover;
 }
 
@@ -535,7 +535,7 @@ ul.navSide {
 
 /* Social */
 .social.img {
-    background: url('/wp-content/themes/UCF-WordPress-Theme/img/background_ucf.jpg');
+    background: url('/wp-content/themes/bs-hr-theme/img/background_ucf.jpg');
     background-size: cover;
 }
 
@@ -754,7 +754,7 @@ ul.statistics li.fourth {
 }
 
 .blog .imgOverlay {
-    background: url('/wp-content/themes/UCF-WordPress-Theme/img/background_blog.jpg') no-repeat center center;
+    background: url('/wp-content/themes/bs-hr-theme/img/background_blog.jpg') no-repeat center center;
     background-size: cover;
 }
 
@@ -1064,7 +1064,7 @@ li.perk a span.button {
 }
 
 .perks.img.large {
-    background: url('/wp-content/themes/UCF-WordPress-Theme/img/photo_row.jpg') no-repeat bottom center;
+    background: url('/wp-content/themes/bs-hr-theme/img/photo_row.jpg') no-repeat bottom center;
     background-size:100%;
     padding-bottom:380px;
 }
@@ -1140,7 +1140,7 @@ ul.list {
     position:absolute;
     width:100%;
     height:100%;
-    background: url('/wp-content/themes/UCF-WordPress-Theme/img/background_knight.jpg');
+    background: url('/wp-content/themes/bs-hr-theme/img/background_knight.jpg');
     top:0px;
     left:0px;
     background-size:cover;
@@ -1459,17 +1459,17 @@ a.button img.icon {
 }
 
 .welcome .sideNav ul.navSide li.learningOpp {
-    background:url('/wp-content/themes/UCF-WordPress-Theme/img/buttonbg_learningOpp.jpg');
+    background:url('/wp-content/themes/bs-hr-theme/img/buttonbg_learningOpp.jpg');
     background-size:cover;
 }
 
 .welcome .sideNav ul.navSide li.leadDev {
-    background:url('/wp-content/themes/UCF-WordPress-Theme/img/buttonbg_leadDev.jpg');
+    background:url('/wp-content/themes/bs-hr-theme/img/buttonbg_leadDev.jpg');
     background-size:cover;
 }
 
 .welcome .sideNav ul.navSide li.orgDev {
-    background:url('/wp-content/themes/UCF-WordPress-Theme/img/buttonbg_orgDev.jpg');
+    background:url('/wp-content/themes/bs-hr-theme/img/buttonbg_orgDev.jpg');
     background-size:cover;
 }
 
@@ -1529,7 +1529,7 @@ a.button img.icon {
 }
 
 .container-fluid.learnTabs {
-    background: url(/wp-content/themes/UCF-WordPress-Theme/img/background_learning.jpg);
+    background: url(/wp-content/themes/bs-hr-theme/img/background_learning.jpg);
     background-size:cover;
 }
 
@@ -1697,7 +1697,7 @@ a.button img.icon {
     content:'';
     width:10px;
     height:10px;
-    background:url('/wp-content/themes/UCF-WordPress-Theme/img/icon_arrow_sm.png') center center no-repeat;
+    background:url('/wp-content/themes/bs-hr-theme/img/icon_arrow_sm.png') center center no-repeat;
     display:block;
     position:absolute;
     left:20px;
@@ -1740,17 +1740,17 @@ a.button.contact img {
 }
 
 .welcome .sideNav ul.navSide li.collectiveBargaining {
-    background: url(/wp-content/themes/UCF-WordPress-Theme/img/buttonbg_cbuc.jpg);
+    background: url(/wp-content/themes/bs-hr-theme/img/buttonbg_cbuc.jpg);
     background-size: cover;
 }
 
 .welcome .sideNav ul.navSide li.classificationResources {
-    background: url(/wp-content/themes/UCF-WordPress-Theme/img/buttonbg_classresources.jpg);
+    background: url(/wp-content/themes/bs-hr-theme/img/buttonbg_classresources.jpg);
     background-size: cover;
 }
 
 .welcome .sideNav ul.navSide li.UCFClassificationProject {
-    background: url(/wp-content/themes/UCF-WordPress-Theme/img/buttonbg_ucfclass.jpg);
+    background: url(/wp-content/themes/bs-hr-theme/img/buttonbg_ucfclass.jpg);
     background-size: cover;
 }
 
@@ -2087,7 +2087,7 @@ ul.prospectiveiconlinks li a:hover {
 }
 
 .container-fluid.prosjobs div.overlay {
-    background: url('/wp-content/themes/UCF-WordPress-Theme/img/overlay_building.jpg');
+    background: url('/wp-content/themes/bs-hr-theme/img/overlay_building.jpg');
     position:absolute;
     z-index:1;
     top:0px;
@@ -2158,7 +2158,7 @@ ul.featuredjobs a p {
 }
 
 .aboutorlando div.overlay {
-    background: url('/wp-content/themes/UCF-WordPress-Theme/img/overlay_olando.jpg');
+    background: url('/wp-content/themes/bs-hr-theme/img/overlay_olando.jpg');
     background-size: cover;
     position: absolute;
     top: 0px;
@@ -2463,7 +2463,7 @@ footer h5:nth-of-type(2) {
     content: '';
     width: 10px;
     height: 10px;
-    background: url(/wp-content/themes/UCF-WordPress-Theme/img/icon_arrow_sm.png) center center no-repeat;
+    background: url(/wp-content/themes/bs-hr-theme/img/icon_arrow_sm.png) center center no-repeat;
     display: block;
     position: absolute;
     left: 20px;
@@ -3171,9 +3171,9 @@ div#orgchartinfoblocks {
     margin: auto;
 }
 
-.orgchartinfoblock .teammembers img {
+/*.orgchartinfoblock .teammembers img {
     display: none;
-}
+}*/
 
 .orgchartinfoblock .teammembers .row > div {
     padding: 20px;
@@ -3764,12 +3764,14 @@ body.page-template-template-eotm .eotmarchive a .date {
 }
 
 body.search .hero.container-fluid {
-    background: #e8e8e8 !important;
-    height: auto !important;
+    /*background: #e8e8e8 !important;
+    height: auto !important;*/
+    background: url(/wp-content/uploads/sites/18/ucf_35408422_preview_cropped-scaled.jpg) no-repeat center center;
+    background-size: cover;
 }
 
 .subnav.container-fluid {
-    top: -10px;
+    top: -12px;
 }
 
 body.page-template-template-azindex .content ul li {
