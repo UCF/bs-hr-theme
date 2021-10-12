@@ -619,7 +619,7 @@ ul.navSide {
 }
 
 .stats div.imgOverlay {
-	background: url('/wp-content•/themes/bs-hr-theme/img/background_knight.jpg');
+	background: url('/wp-content/themes/bs-hr-theme/img/background_knight.jpg');
 	background-size: cover;
 }
 
@@ -2567,7 +2567,7 @@ header.site-header nav li.boxed {
 video.homevideo {
     /* width: 100%; */
     height: auto;
-    position: absolute;
+    /*position: absolute;*/
     top: 0px;
     left: 0px;
     right: 0px;
@@ -3784,4 +3784,21 @@ body.page-template-template-azindex .content ul li {
     body.page-template-template-azindex .content ul li {
         width:100%;
     }
+}
+
+video.homevideo {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+
+.hero.video.container-fluid > .container {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+}
+
+.hero.video.container-fluid {
+    padding: 0px;
+    height: auto;
 }
