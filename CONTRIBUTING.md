@@ -16,7 +16,7 @@ This document outlines the best ways to submit new ideas or inform us of bugs.  
 
 ## Using the issue tracker
 
-The [issue tracker](https://github.com/UCF/{{My-Project}}/issues) in Github is the preferred channel for [bug reports](#bug-reports), [feature requests](#feature-requests) and [submitting pull requests](#pull-requests).
+The [issue tracker](https://github.com/UCF/bs-hr-theme/issues) in Github is the preferred channel for [bug reports](#bug-reports), [feature requests](#feature-requests) and [submitting pull requests](#pull-requests).
 
 Please do not use the issue tracker for personal support requests.  The [#help-themes Slack channel](https://ucf-wp.slack.com/messages/help-themes/) is the best place to get help with your project.  See the section on [getting help](#asking-questionsgetting-help) for more information.
 
@@ -30,23 +30,23 @@ Before you submit a new bug report, please follow these steps:
 
 1. **Use the GitHub issue search** &mdash; check if the issue has already been reported.  Feel free to comment in the existing issue if it is still open and you have new information to share.
 
-2. **Check if the issue has been fixed** &mdash; if you're not running the latest version of the theme, please check your code against the repo's `master` branch first (`master` will always contain the latest, stable project code). If you are running the latest version, make sure the problem isn't already resolved in an upcoming [milestone](https://github.com/UCF/{{My-Project}}/milestones).
+2. **Check if the issue has been fixed** &mdash; if you're not running the latest version of the theme, please check your code against the repo's `master` branch first (`master` will always contain the latest, stable project code). If you are running the latest version, make sure the problem isn't already resolved in an upcoming [milestone](https://github.com/UCF/bs-hr-theme/milestones).
 
 ### Submit a bug report
-If you've followed the steps above and have a valid bug report to submit, you can submit it by [creating a new issue in Github](https://github.com/UCF/{{My-Project}}/issues/new?template=bug_report.md).
+If you've followed the steps above and have a valid bug report to submit, you can submit it by [creating a new issue in Github](https://github.com/UCF/bs-hr-theme/issues/new?template=bug_report.md).
 
 Add a descriptive, understandable title and details about the bug in the description field, following the template provided. Please try to be as detailed as possible in your report. What steps will reproduce the issue? What browser(s) and OS experience the problem? Do other browsers show the bug differently? What would you expect to be the outcome? All of the information you provide will help us quickly evaluate and fix the issue.
 
-If you have a live example of the bug available somewhere public, please include a link in the bug report.  If you're not comfortable including the URL in the Github issue (e.g. it points to a development environment), you can make a note of it in the report (e.g. "see Slack for example URL"), then share the URL in the [#prj-{{My-Project}} Slack channel](https://ucf-wp.slack.com/messages/prj-{{My-Project}}/).
+If you have a live example of the bug available somewhere public, please include a link in the bug report.  If you're not comfortable including the URL in the Github issue (e.g. it points to a development environment), you can make a note of it in the report (e.g. "see Slack for example URL"), then share the URL in the [#prj-bs-hr-theme Slack channel](https://ucf-wp.slack.com/messages/prj-bs-hr-theme/).
 
 
 ## Feature requests
 
-We welcome new feature requests from developers across campus.  Before submitting a new request, think carefully about if the proposed feature aligns with the [goals of the project](https://github.com/UCF/{{My-Project}}/wiki/#project-goals) and with [UCF's brand](https://www.ucf.edu/brand/). We strongly encourage the discussion of new feature ideas in the [ucf-wp Slack workspace](https://ucf-wp.slack.com/).
+We welcome new feature requests from developers across campus.  Before submitting a new request, think carefully about if the proposed feature aligns with the [goals of the project](https://github.com/UCF/bs-hr-theme/wiki/#project-goals) and with [UCF's brand](https://www.ucf.edu/brand/). We strongly encourage the discussion of new feature ideas in the [ucf-wp Slack workspace](https://ucf-wp.slack.com/).
 
 Please provide as much detail and context as possible to justify the inclusion of your idea in the theme. We reserve the right to deny feature requests when they don't align with the project's goals, or if said feature is already accomplishable with existing utilities/components.
 
-You can submit a new feature request by [creating a new issue in Github](https://github.com/UCF/{{My-Project}}/issues/new?template=feature_request.md) and filling out the provided template.
+You can submit a new feature request by [creating a new issue in Github](https://github.com/UCF/bs-hr-theme/issues/new?template=feature_request.md) and filling out the provided template.
 
 
 ## Pull requests
@@ -68,13 +68,13 @@ Adhering to the following process is the best way to submit a pull request:
 
    ```bash
    # Clone your fork of the repo into the current directory
-   git clone https://github.com/<your-username>/{{My-Project}}.git
+   git clone https://github.com/<your-username>/bs-hr-theme.git
 
    # Navigate to the newly cloned directory
-   cd {{My-Project}}
+   cd bs-hr-theme
 
    # Assign the original repo to a remote called "upstream"
-   git remote add upstream https://github.com/UCF/{{My-Project}}.git
+   git remote add upstream https://github.com/UCF/bs-hr-theme.git
    ```
 
 3. If you cloned a while ago, get the latest changes from upstream:
@@ -96,7 +96,7 @@ Adhering to the following process is the best way to submit a pull request:
 
 5. Commit your changes in logical chunks. Please provide [helpful, readable commit messages](https://chris.beams.io/posts/git-commit/) (avoid nondescriptive messages such as "bugfix" or "minor change").
 
-    If you're making changes to scss or js files, make sure you're minifying **and committing** those minified file changes.  scss and js file processing should be performed using gulp commands provided in the repo (see [gulpfile.js](https://github.com/UCF/{{My-Project}}/blob/master/gulpfile.js))
+    If you're making changes to scss or js files, make sure you're minifying **and committing** those minified file changes.  scss and js file processing should be performed using gulp commands provided in the repo (see [gulpfile.js](https://github.com/UCF/bs-hr-theme/blob/master/gulpfile.js))
 
 6. Locally merge the upstream `rc-*` or `master` branch (whichever you branched off of initially) into your topic branch:
 
@@ -121,10 +121,10 @@ In general, we keep conversations about distributed UCF WordPress projects on th
 Whenever you post to the ucf-wp Slack, including your **job title**, information about the **college or department** you work for, as well as the **site(s) you need help with** will help us help you more effectively.
 
 ### General questions
-If you have a general question about the theme, design decisions, or any other question that isn't a help request, please post it in the [#prj-{{My-Project}} Slack channel](https://ucf-wp.slack.com/messages/prj-{{My-Project}}/). {{Edit this copy as needed!}}
+If you have a general question about the theme, design decisions, or any other question that isn't a help request, please post it in the [#prj-bs-hr-theme Slack channel](https://ucf-wp.slack.com/messages/prj-bs-hr-theme/). {{Edit this copy as needed!}}
 
 ### Help
-If you need help with using this theme on your site, check out our [project documentation](https://github.com/UCF/{{My-Project}}/wiki).  If you can't find the answer to your question there, please drop us a line in the [#help-themes Slack channel](https://ucf-wp.slack.com/messages/help-themes/).  You don't need to @mention anyone specific, but **please note that you're using the {{My Project}} when posting your question** and include a link to your site if it's relevant to your question.
+If you need help with using this theme on your site, check out our [project documentation](https://github.com/UCF/bs-hr-theme/wiki).  If you can't find the answer to your question there, please drop us a line in the [#help-themes Slack channel](https://ucf-wp.slack.com/messages/help-themes/).  You don't need to @mention anyone specific, but **please note that you're using the {{My Project}} when posting your question** and include a link to your site if it's relevant to your question.
 
 -----
 
