@@ -476,7 +476,7 @@ body.blog {
     height: 46px;
     top: -5px;
     position: relative;
-    background: url('/wp-content/themes/UCF-WordPress-Theme-Human-Resources/img/icon_maglass.png') no-repeat center center #000000;
+    background: url('/wp-content/themes/bs-hr-theme/img/icon_maglass.png') no-repeat center center #000000;
 }
 
 .sideNav h3:after {
@@ -2682,7 +2682,7 @@ body.search .pagination {
 body.search .pagination .nav-previous,
 body.search .pagination .nav-next {
     display:inline-block;
-    width:50%;   
+    width:50%;
 }
 
 body.search .pagination .nav-previous a,
@@ -3302,7 +3302,7 @@ iframe {
         order: 0;
         left: initial;
     }
-    
+
     div#Connect .row .col {
         max-width: 100%;
         display: block;
@@ -3313,7 +3313,7 @@ iframe {
     div#Connect .row .col:first-of-type {
         margin-bottom: 60px;
     }
-    
+
     div#Explore .container .row .left, div#Explore .container .row .right {
         display: block;
         flex: none;
@@ -3385,7 +3385,7 @@ iframe {
         top: 16px;
     }
 
-    
+
 
 .learnTabs > div.row.tabs {
     width: 100%;
@@ -3602,7 +3602,7 @@ ul.alphaLinks li a {
         padding: 30px;
     }
 
-    
+
     ul.perkList li {
         width: 100%;
         box-sizing: border-box !important;
@@ -3621,7 +3621,7 @@ ul.alphaLinks li a {
         line-break: anywhere;
     }
 
-    
+
     table td {
         width: auto !important;
         vertical-align: top !important;
