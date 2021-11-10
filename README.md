@@ -1,4 +1,4 @@
-# {{My Project}}
+# bs-hr-theme
 
 {{Brief description of this theme}}.  Built as a child theme of the [UCF WordPress Theme](https://github.com/UCF/UCF-WordPress-Theme), using the [Athena Framework](https://ucf.github.io/Athena-Framework/).
 
@@ -12,7 +12,7 @@
 
 ## Documentation
 
-Head over to the [{{My Project}} wiki](https://github.com/UCF/bs-hr-theme/wiki) for detailed information about this theme, installation instructions, and more.
+Head over to the [bs-hr-theme wiki](https://github.com/UCF/bs-hr-theme/wiki) for detailed information about this theme, installation instructions, and more.
 
 -----
 
@@ -36,7 +36,7 @@ Note that compiled, minified css and js files are included within the repo.  Cha
     The full list of modifiable config values can be viewed in `gulpfile.js` (see `config` variable).
 3. Run `gulp default` to process front-end assets.
 4. If you haven't already done so, create a new WordPress site on your development environment, and [install and activate theme dependencies](https://github.com/UCF/bs-hr-theme/wiki/Installation#installation-requirements).
-5. Set {{My Project}} as the active theme.
+5. Set bs-hr-theme as the active theme.
 6. Make sure you've completed [all theme configuration steps](https://github.com/UCF/bs-hr-theme/wiki/Installation#theme-configuration).
 7. Run `gulp watch` to continuously watch changes to scss and js files.  If you enabled BrowserSync in `gulp-config.json`, it will also reload your browser when scss or js files change.
 
