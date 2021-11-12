@@ -57,11 +57,13 @@ function today_reenable_templates() {
 
 add_action( 'after_setup_theme', 'today_reenable_templates' );
 
-/*
- * Layout function for the UCF RSS Plugin
+/**
+ *
+ * Layout function for the UCF RSS Plugin on the Prospective Employees Page
+ *
  * Called via this shortcode: [rss-feed url="https://jobs.ucf.edu/cw/en-us/rss" limit="3" layout="hr"]
- * On the Prospective Employees page
-*/
+ *
+ **/
 
 if ( !function_exists( 'ucf_rss_display_hr_before' ) ) {
 
@@ -113,7 +115,7 @@ if ( !function_exists( 'ucf_rss_display_hr' ) ) {
 		<?php else: ?>
 			<div class="ucf-rss-feed-error">No results found.</div>
 		<?php endif; ?>
-		<?php
+	<?php
 		return ob_get_clean();
 	}
 
