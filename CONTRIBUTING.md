@@ -1,4 +1,4 @@
-# Contributing to {{My Project}}
+# Contributing to bs-hr-theme
 
 Thank you for your interest in contributing to this project!  If you are a developer for UCF and want to contribute to this theme, we'd love to hear from you.
 
@@ -120,11 +120,8 @@ In general, we keep conversations about distributed UCF WordPress projects on th
 
 Whenever you post to the ucf-wp Slack, including your **job title**, information about the **college or department** you work for, as well as the **site(s) you need help with** will help us help you more effectively.
 
-### General questions
-If you have a general question about the theme, design decisions, or any other question that isn't a help request, please post it in the [#prj-bs-hr-theme Slack channel](https://ucf-wp.slack.com/messages/prj-bs-hr-theme/). {{Edit this copy as needed!}}
-
 ### Help
-If you need help with using this theme on your site, check out our [project documentation](https://github.com/UCF/bs-hr-theme/wiki).  If you can't find the answer to your question there, please drop us a line in the [#help-themes Slack channel](https://ucf-wp.slack.com/messages/help-themes/).  You don't need to @mention anyone specific, but **please note that you're using the {{My Project}} when posting your question** and include a link to your site if it's relevant to your question.
+If you need help with using this theme on your site, check out our [project documentation](https://github.com/UCF/bs-hr-theme/wiki).  If you can't find the answer to your question there, please drop us a line in the [#help-themes Slack channel](https://ucf-wp.slack.com/messages/help-themes/).  You don't need to @mention anyone specific, but **please note that you're using the bs-hr-theme when posting your question** and include a link to your site if it's relevant to your question.
 
 -----
 
