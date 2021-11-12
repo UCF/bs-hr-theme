@@ -63,8 +63,6 @@ add_action( 'after_setup_theme', 'today_reenable_templates' );
  * On the Prospective Employees page
 */
 
-<?php
-
 if ( !function_exists( 'ucf_rss_display_hr_before' ) ) {
 
 	function ucf_rss_display_hr_before( $content, $items, $args ) {
@@ -131,6 +129,7 @@ if ( !function_exists( 'ucf_rss_display_hr_after' ) ) {
 		</div>
 		<?php
 		return ob_get_clean();
+
 	}
 
 	add_filter( 'ucf_rss_display_hr_after', 'ucf_rss_display_hr_after', 10, 3 );
