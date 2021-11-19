@@ -63,8 +63,6 @@ add_action( 'after_setup_theme', 'today_reenable_templates' );
  * On the Prospective Employees page
 */
 
-<?php
-
 if ( !function_exists( 'ucf_rss_display_hr_before' ) ) {
 
 	function ucf_rss_display_hr_before( $content, $items, $args ) {
@@ -108,6 +106,7 @@ if ( !function_exists( 'ucf_rss_display_hr' ) ) {
 						<a class="ucf-rss-item-link" href="<?php echo UCF_RSS_Common::get_simplepie_url( $item ); ?>"
 						   title="<?php echo $item->get_date( 'j F Y | g:i a' ); ?>">
 							<?php echo UCF_RSS_Common::get_simplepie_title( $item ); ?>
+							<p class="desc"><?php echo UCF_RSS_Common::get_simplepie_description( $item ); ?></p>
 						</a>
 					</li>
 				<?php endforeach; ?>
