@@ -135,3 +135,44 @@ if ( !function_exists( 'ucf_rss_display_hr_after' ) ) {
 	add_filter( 'ucf_rss_display_hr_after', 'ucf_rss_display_hr_after', 10, 3 );
 
 }
+
+/*
+ * Function to fetch posts and search contents of custom post types
+*/
+
+add_action( 'pre_get_posts', 'search_metadata', 9 );
+
+function search_metadata() {
+	if ( ! is_main_query() || ! is_search() ) {
+		return;
+	}
+
+	add_filter( 'posts_join', function( $join ) {
+		global $wpdb;
+		return $join .' LEFT JOIN ' . $wpdb->postmeta . ' ON '. $wpdb->posts . '.ID = ' . $wpdb->postmeta . '.post_id ';
+	} );
+
+	add_filter( 'posts_where', function ( $where ) {
+		global $wpdb;
+
+		$or = array(
+			"(".$wpdb->posts.".post_title LIKE $1)",
+			"(".$wpdb->postmeta.".meta_value LIKE $1)",
+		);
+
+		if ( is_main_query() && is_search() ) {
+			$where = preg_replace(
+				"/\(\s*".$wpdb->posts.".post_title\s+LIKE\s*(\'[^\']+\')\s*\)/",
+				implode( ' OR ', $or ),
+				$where
+			);
+		}
+
+		return $where;
+	} );
+
+	add_filter( 'posts_distinct', function () {
+		global $wpdb;
+		return "DISTINCT";
+	} );
+}
