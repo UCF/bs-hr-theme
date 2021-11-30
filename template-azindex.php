@@ -270,7 +270,7 @@
 							};
 
 
-						if ($documentName[0] == "E" or "e") {
+						if ( strcasecmp( $documentName[0], "e" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
