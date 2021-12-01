@@ -118,7 +118,7 @@
 							};
 
 
-						if ($documentName[0] == "A") {
+						if ( strcasecmp( $documentName[0], "a" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -156,7 +156,7 @@
 							};
 
 
-						if ($documentName[0] == "B") {
+						if ( strcasecmp( $documentName[0], "b" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -194,7 +194,7 @@
 							};
 
 
-						if ($documentName[0] == "C") {
+						if ( strcasecmp( $documentName[0], "c" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -232,7 +232,7 @@
 							};
 
 
-						if ($documentName[0] == "D") {
+						if ( strcasecmp( $documentName[0], "d" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -308,7 +308,7 @@
 							};
 
 
-						if ($documentName[0] == "F") {
+						if ( strcasecmp( $documentName[0], "f" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -346,7 +346,7 @@
 							};
 
 
-						if ($documentName[0] == "G") {
+						if ( strcasecmp( $documentName[0], "g" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -384,7 +384,7 @@
 							};
 
 
-						if ($documentName[0] == "H") {
+						if ( strcasecmp( $documentName[0], "h" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -422,7 +422,7 @@
 							};
 
 
-						if ($documentName[0] == "J") {
+						if ($documentName[0] == "i") {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -460,7 +460,7 @@
 							};
 
 
-						if ($documentName[0] == "J") {
+						if ( strcasecmp( $documentName[0], "e" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -498,7 +498,7 @@
 							};
 
 
-						if ($documentName[0] == "K") {
+						if ( strcasecmp( $documentName[0], "k" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -536,7 +536,7 @@
 							};
 
 
-						if ($documentName[0] == "L") {
+						if ( strcasecmp( $documentName[0], "l" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -574,7 +574,7 @@
 							};
 
 
-						if ($documentName[0] == "M") {
+						if ( strcasecmp( $documentName[0], "m" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -612,7 +612,7 @@
 							};
 
 
-						if ($documentName[0] == "N") {
+						if ( strcasecmp( $documentName[0], "n" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -650,7 +650,7 @@
 							};
 
 
-						if ($documentName[0] == "O") {
+						if ( strcasecmp( $documentName[0], "o" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -688,7 +688,7 @@
 							};
 
 
-						if ($documentName[0] == "P") {
+						if ( strcasecmp( $documentName[0], "p" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -726,7 +726,7 @@
 							};
 
 
-						if ($documentName[0] == "Q") {
+						if ( strcasecmp( $documentName[0], "q" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -764,7 +764,7 @@
 							};
 
 
-						if ($documentName[0] == "R") {
+						if ( strcasecmp( $documentName[0], "r" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -802,7 +802,7 @@
 							};
 
 
-						if ($documentName[0] == "S") {
+						if ( strcasecmp( $documentName[0], "s" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -840,7 +840,7 @@
 							};
 
 
-						if ($documentName[0] == "T") {
+						if ( strcasecmp( $documentName[0], "t" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -878,7 +878,7 @@
 							};
 
 
-						if ($documentName[0] == "U") {
+						if ( strcasecmp( $documentName[0], "u" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -916,7 +916,7 @@
 							};
 
 
-						if ($documentName[0] == "V") {
+						if ( strcasecmp( $documentName[0], "v" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -954,7 +954,7 @@
 							};
 
 
-						if ($documentName[0] == "W") {
+						if ( strcasecmp( $documentName[0], "w" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -992,7 +992,7 @@
 							};
 
 
-						if ($documentName[0] == "X") {
+						if ( strcasecmp( $documentName[0], "x" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -1030,7 +1030,7 @@
 							};
 
 
-						if ($documentName[0] == "Y") {
+						if ( strcasecmp( $documentName[0], "y" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -1068,7 +1068,7 @@
 							};
 
 
-						if ($documentName[0] == "Z") {
+						if ( strcasecmp( $documentName[0], "z" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
