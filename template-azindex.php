@@ -86,6 +86,7 @@
 					<li><a href="#alphaX" class="alphaX">X</a></li>
 					<li><a href="#alphaY" class="alphaY">Y</a></li>
 					<li><a href="#alphaZ" class="alphaZ">Z</a></li>
+					<li><a href="#alphaNum" class="alphaNum ">#</a></li>
 				</ul>
 			</div>
 		</div>
@@ -422,7 +423,7 @@
 							};
 
 
-						if ($documentName[0] == "i") {
+						if ( strcasecmp( $documentName[0], "i" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -460,7 +461,7 @@
 							};
 
 
-						if ( strcasecmp( $documentName[0], "e" ) == 0 ) {
+						if ( strcasecmp( $documentName[0], "j" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -1069,6 +1070,44 @@
 
 
 						if ( strcasecmp( $documentName[0], "z" ) == 0 ) {
+							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						}
+					}
+
+					echo '</ul>';
+				}
+				?>
+
+			</div>
+			<div class="left col-12 alphafilelist alphaNum" id="alphaNum">
+				<h3 class="title">#</h3>
+
+				<?php
+
+				$params = array(
+					limit => 9999,
+				);
+
+				//search in articles pod
+				$pods = pods( 'forms_and_documents', $params );
+
+				//loop through results
+				if ( 0 < $pods->total() ) {
+
+					echo '<ul class="dlList">';
+
+					while ( $pods->fetch() ) {
+
+						$documentName = $pods->display('name');
+
+						if ($pods->display('file_upload')) {
+							$fileurl = $pods->display('file_upload');
+						} else {
+							$fileurl = $pods->display('location_url');
+						};
+
+
+						if ( preg_match( '/[a-zA-z]/' , $documentName[0] ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
