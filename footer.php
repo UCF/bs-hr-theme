@@ -677,7 +677,11 @@
 				$('.alphaLinks li a.alphaZ').click(function() {
 					$('.azcontentbox .row.content > div.alphafilelist').removeClass('active');
 					$('.azcontentbox .row.content > div.alphaZ').addClass('active');
-				}); */
+				});
+				$('.alphaLinks li a.alphaNum').click(function() {
+					$('.azcontentbox .row.content > div.alphafilelist').removeClass('active');
+					$('.azcontentbox .row.content > div.alphaNum').addClass('active');
+				});*/
 
 		</script>
 

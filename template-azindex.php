@@ -1079,7 +1079,7 @@
 				?>
 
 			</div>
-			<div class="left col-12 alphafilelist alphaNum" id="alphaNum">
+			<div class="left col-12 alphafilelist alphaNum active" id="alphaNum">
 				<h3 class="title">#</h3>
 
 				<?php

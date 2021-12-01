@@ -93,6 +93,7 @@ if ( !function_exists( 'ucf_rss_display_hr_title' ) ) {
 
 }
 
+//Adds HR Layout to UCF RSS Feed Plugin
 if ( !function_exists( 'ucf_rss_display_hr' ) ) {
 
 	function ucf_rss_display_hr( $content, $items, $args ) {
