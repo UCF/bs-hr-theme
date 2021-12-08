@@ -3802,3 +3802,143 @@ video.homevideo {
     padding: 0px;
     height: auto;
 }
+
+/* linking APPLY circle to job */
+.ucf-rss-feed li a::before {
+  content: 'APPLY';
+  background: #000;
+  border-radius: 100px;
+  width: 56px;
+  height: 56px;
+  border: 5px solid gold;
+  display: inline-block;
+  color: #fff!important;
+  font-size: 10px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 46px;
+  float: left;
+  margin-right: 20px;
+  display: block!important;
+}
+
+.ucf-rss-feed li a:hover:before {
+  content: 'APPLY';
+  background: #ffc904;
+  color: #000!important;
+}
+
+.ucf-rss-feed li:before {
+  display:none !important;
+}
+
+.ucf-rss-feed li a .desc {
+  display:block;
+  margin-left:76px;
+}
+
+/* fix video on prospective employee page */
+iframe {
+  height:initial !important;
+}
+
+/* fix search results header display */
+body.search.search-results .hero.container-fluid {
+  padding-top: 50px;
+  height: auto !important;
+  padding-bottom: 50px;
+  background: black !important;
+}
+
+body.search.search-results .hero .headerText h1 {
+  font-size: 30px;
+  font-weight: bold !important;
+}
+
+body.search.search-results .hero .headerText h2 {
+  font-size: 16px;
+  background: #404040;
+}
+
+/* style for learn more button on org chart */
+div#orgchartinfoblocks a.button {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 190px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* fix spacing between items on az index page */
+body.page-template-template-azindex .content ul li {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  line-height: 100% !important;
+}
+
+/* fix line breaking for h3 */
+h3.title,
+body.page-template-template-inside .container-fluid h3,
+body.page-template-template-inside .container h3 {
+  line-break:initial !important;
+}
+
+/* fix about orlando nav */
+@media (max-width:768px) {
+  div#about-orlando > .container {
+    padding-bottom: 0px !important;
+  }
+
+  .aboutorlando .tabsContent {
+    margin-bottom: 60px !important;
+  }
+
+  .aboutorlando > .row.tabs {
+    width: 100% !important;
+    max-width: 100% !important;
+    box-sizing: border-box !important;
+    left:15px !important;
+  }
+
+  .aboutorlando > .row.tabs a {
+    display: block;
+    width: 100%;
+    padding: 0px !important;
+    text-align: center;
+  }
+
+  .aboutorlando > .row.tabs:not(:nth-child(1)) a {
+    border-radius:0px;
+  }
+
+  .aboutorlando .row.tabs:nth-child(4) {
+    top: 55px;
+    left: initial;
+    right:initial !important;
+    border-radius: 0px !important;
+  }
+
+  .aboutorlando .row.tabs:nth-child(7) {
+    top: 89px;
+    left: initial;
+    right:initial !important;
+    border-radius: 0px !important;
+  }
+
+  .aboutorlando .row.tabs:nth-child(10) {
+    top: 123px;
+    left: initial;
+    right:initial !important;
+    border-radius: 0px !important;
+  }
+
+  .aboutorlando .row.tabsContent {
+    margin-top: 96px;
+    border-radius:10px;
+  }
+
+  .aboutorlando .row.tabs>a img.arrow {
+    top:10px;
+  }
+}

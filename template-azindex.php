@@ -23,18 +23,18 @@
                 <?php else: ?>
                     <?php echo $post->post_title; ?>
                 <?php endif; ?>
-            
+
             </h1><br/>
-            
+
             <h2>
-                
+
                 <?php if( get_field('page_subtitle') ): ?>
                     <?php the_field('page_subtitle'); ?>
-                <?php else: 
+                <?php else:
                     $parent_title = get_the_title($post->post_parent);?>
                         <?php echo $parent_title; ?>
                 <?php endif; ?>
-            
+
             </h2>
 
 		</div>
@@ -86,6 +86,7 @@
 					<li><a href="#alphaX" class="alphaX">X</a></li>
 					<li><a href="#alphaY" class="alphaY">Y</a></li>
 					<li><a href="#alphaZ" class="alphaZ">Z</a></li>
+					<li><a href="#alphaNum" class="alphaNum ">#</a></li>
 				</ul>
 			</div>
 		</div>
@@ -97,18 +98,18 @@
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -116,9 +117,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "A") {
+
+						if ( strcasecmp( $documentName[0], "a" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -130,23 +131,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaB active" id="alphaB">
 				<h3 class="title">B</h3>
-				
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -154,9 +155,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "B") {
+
+						if ( strcasecmp( $documentName[0], "b" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -168,23 +169,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaC active" id="alphaC">
 				<h3 class="title">C</h3>
-				
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -192,9 +193,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "C") {
+
+						if ( strcasecmp( $documentName[0], "c" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -206,23 +207,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaD active" id="alphaD">
 				<h3 class="title">D</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -230,9 +231,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "D") {
+
+						if ( strcasecmp( $documentName[0], "d" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -244,23 +245,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaE active" id="alphaE">
 				<h3 class="title">E</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -268,9 +269,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "E") {
+
+						if ( strcasecmp( $documentName[0], "e" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -282,23 +283,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaF active" id="alphaF">
 				<h3 class="title">F</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -306,9 +307,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "F") {
+
+						if ( strcasecmp( $documentName[0], "f" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -320,23 +321,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaG active" id="alphaG">
 				<h3 class="title">G</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -344,9 +345,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "G") {
+
+						if ( strcasecmp( $documentName[0], "g" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -358,23 +359,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaH active" id="alphaH">
 				<h3 class="title">H</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -382,9 +383,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "H") {
+
+						if ( strcasecmp( $documentName[0], "h" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -396,23 +397,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaI active" id="alphaI">
 				<h3 class="title">I</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -420,9 +421,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "J") {
+
+						if ( strcasecmp( $documentName[0], "i" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -434,23 +435,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaJ active" id="alphaJ">
 				<h3 class="title">J</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -458,9 +459,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "J") {
+
+						if ( strcasecmp( $documentName[0], "j" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -472,23 +473,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaK active" id="alphaK">
 				<h3 class="title">K</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -496,9 +497,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "K") {
+
+						if ( strcasecmp( $documentName[0], "k" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -510,23 +511,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaL active" id="alphaL">
 				<h3 class="title">L</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -534,9 +535,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "L") {
+
+						if ( strcasecmp( $documentName[0], "l" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -548,23 +549,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaM active" id="alphaM">
 				<h3 class="title">M</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -572,9 +573,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "M") {
+
+						if ( strcasecmp( $documentName[0], "m" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -586,23 +587,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaN active" id="alphaN">
 				<h3 class="title">N</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -610,9 +611,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "N") {
+
+						if ( strcasecmp( $documentName[0], "n" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -624,23 +625,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaO active" id="alphaO">
 				<h3 class="title">O</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -648,9 +649,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "O") {
+
+						if ( strcasecmp( $documentName[0], "o" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -662,23 +663,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaP active" id="alphaP">
 				<h3 class="title">P</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -686,9 +687,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "P") {
+
+						if ( strcasecmp( $documentName[0], "p" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -700,23 +701,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaQ active" id="alphaQ">
 				<h3 class="title">Q</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -724,9 +725,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "Q") {
+
+						if ( strcasecmp( $documentName[0], "q" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -738,23 +739,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaR active" id="alphaR">
 				<h3 class="title">R</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -762,9 +763,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "R") {
+
+						if ( strcasecmp( $documentName[0], "r" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -776,23 +777,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaS active" id="alphaS">
 				<h3 class="title">S</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -800,9 +801,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "S") {
+
+						if ( strcasecmp( $documentName[0], "s" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -814,23 +815,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaT active" id="alphaT">
 				<h3 class="title">T</h3>
-				
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -838,9 +839,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "T") {
+
+						if ( strcasecmp( $documentName[0], "t" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -852,23 +853,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaU active" id="alphaU">
 				<h3 class="title">U</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -876,9 +877,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "U") {
+
+						if ( strcasecmp( $documentName[0], "u" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -890,23 +891,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaV active" id="alphaV">
 				<h3 class="title">V</h3>
-				
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -914,9 +915,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "V") {
+
+						if ( strcasecmp( $documentName[0], "v" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -928,23 +929,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaW active" id="alphaW">
 				<h3 class="title">W</h3>
-				
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -952,9 +953,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "W") {
+
+						if ( strcasecmp( $documentName[0], "w" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -966,23 +967,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaX active" id="alphaX">
 				<h3 class="title">X</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -990,9 +991,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "X") {
+
+						if ( strcasecmp( $documentName[0], "x" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -1004,23 +1005,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaY active" id="alphaY">
 				<h3 class="title">Y</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -1028,9 +1029,9 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "Y") {
+
+						if ( strcasecmp( $documentName[0], "y" ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -1042,23 +1043,23 @@
 			</div>
 			<div class="left col-12 alphafilelist alphaZ active" id="alphaZ">
 				<h3 class="title">Z</h3>
-								
+
 				<?php
 
 				$params = array(
 					limit => 9999,
-				);	
+				);
 
 				//search in articles pod
 				$pods = pods( 'forms_and_documents', $params );
 
 				//loop through results
-				if ( 0 < $pods->total() ) { 
+				if ( 0 < $pods->total() ) {
 
 					echo '<ul class="dlList">';
 
 					while ( $pods->fetch() ) {
-					
+
 						$documentName = $pods->display('name');
 
 							if ($pods->display('file_upload')) {
@@ -1066,9 +1067,47 @@
 							} else {
 								$fileurl = $pods->display('location_url');
 							};
-						
 
-						if ($documentName[0] == "Z") {
+
+						if ( strcasecmp( $documentName[0], "z" ) == 0 ) {
+							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+						}
+					}
+
+					echo '</ul>';
+				}
+				?>
+
+			</div>
+			<div class="left col-12 alphafilelist alphaNum active" id="alphaNum">
+				<h3 class="title">#</h3>
+
+				<?php
+
+				$params = array(
+					limit => 9999,
+				);
+
+				//search in articles pod
+				$pods = pods( 'forms_and_documents', $params );
+
+				//loop through results
+				if ( 0 < $pods->total() ) {
+
+					echo '<ul class="dlList">';
+
+					while ( $pods->fetch() ) {
+
+						$documentName = $pods->display('name');
+
+						if ($pods->display('file_upload')) {
+							$fileurl = $pods->display('file_upload');
+						} else {
+							$fileurl = $pods->display('location_url');
+						};
+
+
+						if ( preg_match( '/[a-zA-z]/' , $documentName[0] ) == 0 ) {
 							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
 						}
 					}
@@ -1156,7 +1195,7 @@
 		<div class="row content">
 
 
-	
+
 		<?php
 
 		$category = 'Benefits';
@@ -1165,11 +1204,11 @@
 		$params = array(
 			limit => 9999,
 			where => "category.meta_value = '$category'",
-		);	
+		);
 
 		$pods = pods( 'forms_and_documents', $params );
 
-		if ( 0 < $pods->total() ) { 
+		if ( 0 < $pods->total() ) {
 
 
 			echo '<div class="left col-12 catName ' . $slug . '">';
@@ -1177,7 +1216,7 @@
 			echo '<ul class="dlList">';
 
 			while ( $pods->fetch() ) {
-				
+
 				$documentName = $pods->display('name');
 					if ($pods->display('file_upload')) {
 						$fileurl = $pods->display('file_upload');
@@ -1186,7 +1225,7 @@
 					};
 
 					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
-						
+
 			}
 
 			echo '</ul>';
@@ -1203,11 +1242,11 @@
 		$params = array(
 			limit => 9999,
 			where => "category.meta_value = '$category'",
-		);	
+		);
 
 		$pods = pods( 'forms_and_documents', $params );
 
-		if ( 0 < $pods->total() ) { 
+		if ( 0 < $pods->total() ) {
 
 
 			echo '<div class="left col-12 catName ' . $slug . '">';
@@ -1215,7 +1254,7 @@
 			echo '<ul class="dlList">';
 
 			while ( $pods->fetch() ) {
-				
+
 				$documentName = $pods->display('name');
 					if ($pods->display('file_upload')) {
 						$fileurl = $pods->display('file_upload');
@@ -1224,7 +1263,7 @@
 					};
 
 					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
-						
+
 			}
 
 			echo '</ul>';
@@ -1241,11 +1280,11 @@
 		$params = array(
 			limit => 9999,
 			where => "category.meta_value = '$category'",
-		);	
+		);
 
 		$pods = pods( 'forms_and_documents', $params );
 
-		if ( 0 < $pods->total() ) { 
+		if ( 0 < $pods->total() ) {
 
 
 			echo '<div class="left col-12 catName ' . $slug . '">';
@@ -1253,7 +1292,7 @@
 			echo '<ul class="dlList">';
 
 			while ( $pods->fetch() ) {
-				
+
 				$documentName = $pods->display('name');
 					if ($pods->display('file_upload')) {
 						$fileurl = $pods->display('file_upload');
@@ -1262,7 +1301,7 @@
 					};
 
 					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
-						
+
 			}
 
 			echo '</ul>';
@@ -1279,11 +1318,11 @@
 		$params = array(
 			limit => 9999,
 			where => "category.meta_value = '$category'",
-		);	
+		);
 
 		$pods = pods( 'forms_and_documents', $params );
 
-		if ( 0 < $pods->total() ) { 
+		if ( 0 < $pods->total() ) {
 
 
 			echo '<div class="left col-12 catName ' . $slug . '">';
@@ -1291,7 +1330,7 @@
 			echo '<ul class="dlList">';
 
 			while ( $pods->fetch() ) {
-				
+
 				$documentName = $pods->display('name');
 					if ($pods->display('file_upload')) {
 						$fileurl = $pods->display('file_upload');
@@ -1300,7 +1339,7 @@
 					};
 
 					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
-						
+
 			}
 
 			echo '</ul>';
@@ -1317,11 +1356,11 @@
 		$params = array(
 			limit => 9999,
 			where => "category.meta_value = '$category'",
-		);	
+		);
 
 		$pods = pods( 'forms_and_documents', $params );
 
-		if ( 0 < $pods->total() ) { 
+		if ( 0 < $pods->total() ) {
 
 
 			echo '<div class="left col-12 catName ' . $slug . '">';
@@ -1329,7 +1368,7 @@
 			echo '<ul class="dlList">';
 
 			while ( $pods->fetch() ) {
-				
+
 				$documentName = $pods->display('name');
 					if ($pods->display('file_upload')) {
 						$fileurl = $pods->display('file_upload');
@@ -1338,7 +1377,7 @@
 					};
 
 					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
-						
+
 			}
 
 			echo '</ul>';
@@ -1355,11 +1394,11 @@
 		$params = array(
 			limit => 9999,
 			where => "category.meta_value = '$category'",
-		);	
+		);
 
 		$pods = pods( 'forms_and_documents', $params );
 
-		if ( 0 < $pods->total() ) { 
+		if ( 0 < $pods->total() ) {
 
 
 			echo '<div class="left col-12 catName ' . $slug . '">';
@@ -1367,7 +1406,7 @@
 			echo '<ul class="dlList">';
 
 			while ( $pods->fetch() ) {
-				
+
 				$documentName = $pods->display('name');
 					if ($pods->display('file_upload')) {
 						$fileurl = $pods->display('file_upload');
@@ -1376,7 +1415,7 @@
 					};
 
 					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
-						
+
 			}
 
 			echo '</ul>';
@@ -1393,11 +1432,11 @@
 		$params = array(
 			limit => 9999,
 			where => "category.meta_value = '$category'",
-		);	
+		);
 
 		$pods = pods( 'forms_and_documents', $params );
 
-		if ( 0 < $pods->total() ) { 
+		if ( 0 < $pods->total() ) {
 
 
 			echo '<div class="left col-12 catName ' . $slug . '">';
@@ -1405,7 +1444,7 @@
 			echo '<ul class="dlList">';
 
 			while ( $pods->fetch() ) {
-				
+
 				$documentName = $pods->display('name');
 					if ($pods->display('file_upload')) {
 						$fileurl = $pods->display('file_upload');
@@ -1414,7 +1453,7 @@
 					};
 
 					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
-						
+
 			}
 
 			echo '</ul>';
@@ -1422,7 +1461,7 @@
 		}
 
 		?>
-		
+
 		<?php
 
 		$category = 'New Employee Resources';
@@ -1431,11 +1470,11 @@
 		$params = array(
 			limit => 9999,
 			where => "category.meta_value = '$category'",
-		);	
+		);
 
 		$pods = pods( 'forms_and_documents', $params );
 
-		if ( 0 < $pods->total() ) { 
+		if ( 0 < $pods->total() ) {
 
 
 			echo '<div class="left col-12 catName ' . $slug . '">';
@@ -1443,7 +1482,7 @@
 			echo '<ul class="dlList">';
 
 			while ( $pods->fetch() ) {
-				
+
 				$documentName = $pods->display('name');
 					if ($pods->display('file_upload')) {
 						$fileurl = $pods->display('file_upload');
@@ -1452,7 +1491,7 @@
 					};
 
 					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
-						
+
 			}
 
 			echo '</ul>';
@@ -1460,7 +1499,7 @@
 		}
 
 		?>
-		
+
 		<?php
 
 		$category = 'New Employees';
@@ -1469,11 +1508,11 @@
 		$params = array(
 			limit => 9999,
 			where => "category.meta_value = '$category'",
-		);	
+		);
 
 		$pods = pods( 'forms_and_documents', $params );
 
-		if ( 0 < $pods->total() ) { 
+		if ( 0 < $pods->total() ) {
 
 
 			echo '<div class="left col-12 catName ' . $slug . '">';
@@ -1481,7 +1520,7 @@
 			echo '<ul class="dlList">';
 
 			while ( $pods->fetch() ) {
-				
+
 				$documentName = $pods->display('name');
 					if ($pods->display('file_upload')) {
 						$fileurl = $pods->display('file_upload');
@@ -1490,7 +1529,7 @@
 					};
 
 					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
-						
+
 			}
 
 			echo '</ul>';
@@ -1498,7 +1537,7 @@
 		}
 
 		?>
-		
+
 		<?php
 
 		$category = 'Other Forms and Documents';
@@ -1507,11 +1546,11 @@
 		$params = array(
 			limit => 9999,
 			where => "category.meta_value = '$category'",
-		);	
+		);
 
 		$pods = pods( 'forms_and_documents', $params );
 
-		if ( 0 < $pods->total() ) { 
+		if ( 0 < $pods->total() ) {
 
 
 			echo '<div class="left col-12 catName ' . $slug . '">';
@@ -1519,7 +1558,7 @@
 			echo '<ul class="dlList">';
 
 			while ( $pods->fetch() ) {
-				
+
 				$documentName = $pods->display('name');
 					if ($pods->display('file_upload')) {
 						$fileurl = $pods->display('file_upload');
@@ -1528,7 +1567,7 @@
 					};
 
 					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
-						
+
 			}
 
 			echo '</ul>';
@@ -1536,7 +1575,7 @@
 		}
 
 		?>
-		
+
 		<?php
 
 		$category = 'Payroll';
@@ -1545,11 +1584,11 @@
 		$params = array(
 			limit => 9999,
 			where => "category.meta_value = '$category'",
-		);	
+		);
 
 		$pods = pods( 'forms_and_documents', $params );
 
-		if ( 0 < $pods->total() ) { 
+		if ( 0 < $pods->total() ) {
 
 
 			echo '<div class="left col-12 catName ' . $slug . '">';
@@ -1557,7 +1596,7 @@
 			echo '<ul class="dlList">';
 
 			while ( $pods->fetch() ) {
-				
+
 				$documentName = $pods->display('name');
 					if ($pods->display('file_upload')) {
 						$fileurl = $pods->display('file_upload');
@@ -1566,7 +1605,7 @@
 					};
 
 					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
-						
+
 			}
 
 			echo '</ul>';
@@ -1574,7 +1613,7 @@
 		}
 
 		?>
-		
+
 		<?php
 
 		$category = 'Policies and Compliance';
@@ -1583,11 +1622,11 @@
 		$params = array(
 			limit => 9999,
 			where => "category.meta_value = '$category'",
-		);	
+		);
 
 		$pods = pods( 'forms_and_documents', $params );
 
-		if ( 0 < $pods->total() ) { 
+		if ( 0 < $pods->total() ) {
 
 
 			echo '<div class="left col-12 catName ' . $slug . '">';
@@ -1595,7 +1634,7 @@
 			echo '<ul class="dlList">';
 
 			while ( $pods->fetch() ) {
-				
+
 				$documentName = $pods->display('name');
 					if ($pods->display('file_upload')) {
 						$fileurl = $pods->display('file_upload');
@@ -1604,7 +1643,7 @@
 					};
 
 					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
-						
+
 			}
 
 			echo '</ul>';
@@ -1612,7 +1651,7 @@
 		}
 
 		?>
-		
+
 		<?php
 
 		$category = 'Retirement and Retirees';
@@ -1621,11 +1660,11 @@
 		$params = array(
 			limit => 9999,
 			where => "category.meta_value = '$category'",
-		);	
+		);
 
 		$pods = pods( 'forms_and_documents', $params );
 
-		if ( 0 < $pods->total() ) { 
+		if ( 0 < $pods->total() ) {
 
 
 			echo '<div class="left col-12 catName ' . $slug . '">';
@@ -1633,7 +1672,7 @@
 			echo '<ul class="dlList">';
 
 			while ( $pods->fetch() ) {
-				
+
 				$documentName = $pods->display('name');
 					if ($pods->display('file_upload')) {
 						$fileurl = $pods->display('file_upload');
@@ -1642,7 +1681,7 @@
 					};
 
 					echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
-						
+
 			}
 
 			echo '</ul>';
@@ -1653,7 +1692,7 @@
 
 
 
-			
+
 		</div>
 	</div>
 </div>

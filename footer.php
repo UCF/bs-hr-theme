@@ -1,12 +1,12 @@
-				
-<?php if( have_rows('panel') ): 
-	while( have_rows('panel') ) : the_row(); 
+
+<?php if( have_rows('panel') ):
+	while( have_rows('panel') ) : the_row();
 		$name = get_sub_field('panel_name');
 		$anchor = preg_replace('/\W+/', '-', strtolower(trim($name)));
 		$main = get_sub_field('main_content');
-		$background = get_sub_field('background_color'); 
+		$background = get_sub_field('background_color');
 		$paneltype = get_sub_field('panel_type');
-		$sidecontent = get_sub_field('side_content'); 
+		$sidecontent = get_sub_field('side_content');
 		$nav = get_sub_field('has_nav');
 		$search = get_sub_field('include_search');
 		$contact = get_sub_field('has_contact');
@@ -23,22 +23,22 @@
 
 		if ($paneltype == "sftf") {
 			$colone = 'col-lg-9';
-			$coltwo = 'col-lg-3';            
+			$coltwo = 'col-lg-3';
 		}
 
 		if ($paneltype == "sstt") {
 			$colone = 'col-lg-8';
-			$coltwo = 'col-lg-4';            
+			$coltwo = 'col-lg-4';
 		}
 
 		if ($paneltype == "ff") {
 			$colone = 'col-lg-6';
-			$coltwo = 'col-lg-6';   
+			$coltwo = 'col-lg-6';
 		}
 
 		if ($paneltype == "ffr") {
 			$colone = 'col-lg-6';
-			$coltwo = 'col-lg-5 push-1';   
+			$coltwo = 'col-lg-5 push-1';
 		}
 
 		if ($alphoto == "1") {
@@ -64,20 +64,20 @@
                     <div class="col <?php echo $colone; ?> <?php echo $centerclass; ?>">
                         <?php echo $main; ?>
                     </div>
-                    
-                <?php if ($paneltype != "full") { 
+
+                <?php if ($paneltype != "full") {
                         if ($contact == "1") {
                             $contactclass = 'faqContact';
                         }
                     ?>
-                
+
                     <div class="col <?php echo $coltwo; ?> <?php echo $contactclass; ?>">
 
                         <!-- if contact information is enabled in editor -->
                         <?php if ($contact == "1") {
-                            
+
 							if( have_rows('contact') ): ?>
-								
+
                                 <ul class="navSide">
 
                                 <?php while( have_rows('contact') ): the_row();
@@ -91,11 +91,11 @@
                                     ?>
 
 									<h3 class="title center"><?php echo $contactheading; ?></h3>
-									
+
 									<?php if ($contactphoto) { ?>
 											<img src="<?php echo $contactphoto; ?>" class="contactPhoto" />
 									<?php }; ?>
-									
+
 									<?php if ($contactname) { ?>
 										<div class="contactTitle"><?php echo $contactname; ?></div>
 									<?php }; ?>
@@ -103,16 +103,16 @@
 									<?php if ($contacttitle) { ?>
 										<div class="contactSubTitle"><?php echo $contacttitle; ?></div>
 									<?php }; ?>
-									
+
 									<?php if ($contactemail) { ?>
 										<a href="mailto:<?php echo $contactemail; ?>" class="button">GET IN TOUCH <img src="<?php echo esc_url( get_stylesheet_directory_uri()); ?>/img/icon_click.png" class="contactIcon" /></a>
 									<?php }; ?>
-									
+
 									<div class="contactInfo">
 										<?php if ($contactemail) { ?>
 											<span class="left">Email:</span> <span class="right"><a href="mailto:<?php echo $contactemail; ?>"><?php echo $contactemail; ?></a></span>
 										<?php }; ?>
-	
+
 										<?php if ($contactphone) { ?>
 											<span class="left">Phone:</span> <span class="right"><a href="tel:<?php echo $contactphone; ?>"><?php echo $contactphone; ?></a></span>
 										<?php }; ?>
@@ -126,7 +126,7 @@
 
 								</ul>
 
-                            <?php endif; 
+                            <?php endif;
                         } ?>
                         <!-- end contact information -->
 
@@ -151,62 +151,62 @@
 
 
     <?php endwhile; else : endif; ?>
-				
-				
-				
-				
+
+
+
+
 				<footer class="container-fluid black">
 					<div class="container">
 						<div class="row">
 							<div class="col col-4">
 
 							<?php if( have_rows('left_section', '20') ): ?>
-								
+
 								<?php while( have_rows('left_section', '20') ): the_row(); ?>
 									<h5 class="title"><?php the_sub_field('title');?></h5>
 									<?php the_sub_field('content'); ?>
 								<?php endwhile; ?>
-								
+
 							<?php endif; ?>
 
 							</div>
 							<div class="col col-4">
-								
+
 							<?php if( have_rows('middle_section', '20') ): ?>
-								
+
 								<?php while( have_rows('middle_section', '20') ): the_row(); ?>
 									<h5 class="title"><?php the_sub_field('title');?></h5>
 									<?php the_sub_field('content'); ?>
 								<?php endwhile; ?>
-								
+
 							<?php endif; ?>
 
 							</div>
 							<div class="col col-4">
 
 							<?php if( have_rows('right_section', '20') ): ?>
-								
+
 								<?php while( have_rows('right_section', '20') ): the_row(); ?>
 									<h5 class="title"><?php the_sub_field('title');?></h5>
 									<?php the_sub_field('content'); ?>
 								<?php endwhile; ?>
-								
+
 							<?php endif; ?>
 
 							</div>
 						</div>
 					</div>
 				</footer>
-				
+
 			</div>
 		</main>
 
-		
+
 
 
 		<?php /* echo ucfwp_get_footer_markup(); */ ?>
 		<?php wp_footer(); ?>
-		
+
 		<script>
 			$(document).ready(function() {
 				$('.learnTabs .tabs > a').click(function() {
@@ -225,12 +225,12 @@
 					$('.learnTabs .tabsContent > div').removeClass('active');
 					$('.learnTabs .tabsContent > div.orgDev').addClass('active');
 				});
-				
-				
 
-				
-				
-				
+
+
+
+
+
 				$("#fileselect").change(function() {
 					var e = document.getElementById("fileselect");
 					var filevalue = e.options[e.selectedIndex].value;
@@ -374,13 +374,13 @@
 
 				 	$('.helpContent .helpContentBlock').removeClass('active');
 
-				<?php while( have_rows('category_data') ): the_row(); 
+				<?php while( have_rows('category_data') ): the_row();
 
 					// Get sub field values.
 					$question = get_sub_field('reference_question');
 					$value = $input = preg_replace("/[^a-zA-Z]+/", "", $question);
 					?>
-					
+
 					if(filevalue == "<?php echo $value; ?>"){
 					  	$(".helpContent .helpContentBlock.<?php echo $value; ?>").addClass("active");
 				  	}
@@ -524,16 +524,20 @@
 					$('.alphaLinks li a.alphaZ').click(function() {
 						$('.azcontentbox .row.content > div.alphafilelist').removeClass('active');
 						$('.azcontentbox .row.content > div.alphaZ').addClass('active');
-					}); 
+					});
+					$('.alphaLinks li a.alphaNum').click(function() {
+						$('.azcontentbox .row.content > div.alphafilelist').removeClass('active');
+						$('.azcontentbox .row.content > div.alphaNum').addClass('active');
+					});
 
-				
-					$('select#fileselect').change(function(){ 
+
+					$('select#fileselect').change(function(){
 						var value = $(this).val();
 						$('.azcontentbox.cat .row.content .catName').removeClass('active');
 						$('.azcontentbox.cat .row.content .catName.' + value + '').addClass('active');
 					});
 
-				});   
+				});
 
 				// Forms and Documents Category nav toggles jQuery
 
@@ -550,18 +554,18 @@
 					$('.container-fluid.azcontentbox').removeClass('active');
 					$('.container-fluid.azcontentbox.cat').addClass('active');
 				});
-				
-				
+
+
 				$('.formsNav li a.key').click(function() {
 					$('.container-fluid.azcontentbox').removeClass('active');
 					$('.container-fluid.azcontentbox.key').addClass('active');
 				});
-				
+
 				$('.formsNav li a.cont').click(function() {
 					$('.container-fluid.azcontentbox').removeClass('active');
 					$('.container-fluid.azcontentbox.cont').addClass('active');
 				});
-				
+
 				// Forms and Documents jQuery
 				$('.alphaLinks > li > a').click(function() {
 					$('.alphaLinks > li > a').removeClass('active');
@@ -673,10 +677,14 @@
 				$('.alphaLinks li a.alphaZ').click(function() {
 					$('.azcontentbox .row.content > div.alphafilelist').removeClass('active');
 					$('.azcontentbox .row.content > div.alphaZ').addClass('active');
-				}); */
+				});
+				$('.alphaLinks li a.alphaNum').click(function() {
+					$('.azcontentbox .row.content > div.alphafilelist').removeClass('active');
+					$('.azcontentbox .row.content > div.alphaNum').addClass('active');
+				});*/
 
 		</script>
-		
+
 	</body>
-	
+
 </html>
