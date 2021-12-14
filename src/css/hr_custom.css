@@ -3942,3 +3942,42 @@ body.page-template-template-inside .container h3 {
     top:10px;
   }
 }
+
+.orgchartinfoblock a.button.black img {
+  display: none;
+}
+
+.orgchartinfoblock a.button.black {
+  padding-left:40px;
+  position:relative;
+}
+
+.orgchartinfoblock a.button.black:before {
+  content:'';
+  background:url('/wp-content/themes/bs-hr-theme/img/icon_link.png') no-repeat center center;
+  background-size:cover;
+  width:30px;
+  height:30px;
+  display:inline-block;
+  position:absolute;
+  left:20px;
+  top:7px;
+}
+
+div.hero.video.container-fluid {
+  overflow:hidden;
+}
+
+.prospective-video {
+  width: 100% !important;
+  height: 280px !important;
+}
+.azcontentbox > .container > .content > .alphafilelist > ul > li {
+  line-height: 1.65 !important;
+}
+
+@media (max-width: 480px) {
+  #homevideo {
+    /*display: none;*/
+  }
+}
