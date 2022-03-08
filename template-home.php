@@ -29,25 +29,25 @@
 		<video playsinline autoplay muted loop poster="<?php the_field('video_placeholder'); ?>" id="homevideo" class="homevideo">
 		<source src="<?php the_field('header_video'); ?>" type="video/mp4">
 		Your browser does not support the video tag.
-	</video>
-
+		</video>
+		<img class="home-hero-image" src=" <?php the_field('video_placeholder'); ?> " alt="Mobile header image fallback">
 	</div>
 
-	
+
 
 <?php } ?>
 
-		
+
 <!-- Anchor navigation below hero -->
 <div class="subnav container-fluid">
 	<div class="container">
-		<?php 
+		<?php
 			$intronavpre = get_field('intro_nav_name');
 			$socialnavpre = get_field('social_nav_name');
 			$explorenavpre = get_field('explore_nav_name');
 			$statsnavpre = get_field('statistics_nav_name');
 			$employeenavpre = get_field('employee_nav_name');
-			$newsnavpre = get_field('news_nav_name'); 
+			$newsnavpre = get_field('news_nav_name');
 			$intronav = explode(' ',trim($intronavpre));
 			$socialnav = explode(' ',trim($socialnavpre));
 			$explorenav = explode(' ',trim($explorenavpre));
@@ -55,12 +55,12 @@
 			$employeenav = explode(' ',trim($employeenavpre));
 			$newsnav = explode(' ',trim($newsnavpre));
 
-		?> 
+		?>
 
 
 
 			<nav class="anchornav navbar navbar-toggleable-lg">
-			
+
 				<button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#anchorNav" aria-controls="anchorNav" aria-expanded="false" aria-label="Toggle navigation">
 					<span class="navbar-toggler-text"><i class="fa fa-bars" aria-hidden="true"></i> Skip to Section</span>
 					<span class="navbar-toggler-icon" aria-hidden="true"></span>
@@ -68,7 +68,7 @@
 
 				<div class="collapse navbar-collapse" id="anchorNav">
 					<div class="navbar-nav">
-				
+
 						<a class="nav-item nav-link" href="#<?php echo $intronav[0]; ?>"><?php echo $intronavpre; ?></a>
 						<a class="nav-item nav-link" href="#<?php echo $socialnav[0]; ?>"><?php echo $socialnavpre; ?></a>
 						<a class="nav-item nav-link" href="#<?php echo $explorenav[0]; ?>"><?php echo $explorenavpre; ?></a>
@@ -126,7 +126,7 @@
 
 				<!-- Get Featured Person if exists -->
 				<?php if( have_rows('lead_information') ): ?>
-					<?php while( have_rows('lead_information') ): the_row(); 
+					<?php while( have_rows('lead_information') ): the_row();
 
 						// Get sub field values.
 						$photo = get_sub_field('photo');
@@ -154,7 +154,7 @@
 
 				<!-- Side Nav -->
 				<?php if( have_rows('intro_right_column') ): ?>
-					<?php while( have_rows('intro_right_column') ): the_row(); 
+					<?php while( have_rows('intro_right_column') ): the_row();
 
 						// Get sub field values.
 						$title = get_sub_field('title');
@@ -165,16 +165,16 @@
 
 					<div class="sideNav">
 						<h3><?php echo $title; ?> <img src="<?php echo esc_url( get_stylesheet_directory_uri()); ?>/img/icon_arrow_large.png" /></h3>
-						
+
 						<ul class="navSide">
 							<?php if (!empty($includesearch)) { ?>
-								<!--li class="searchBar"><input type="text" value="Search UCF HR"/><input type="submit" /></li--> 
-								<li class="searchBar"><?php get_search_form(); ?></li> 
+								<!--li class="searchBar"><input type="text" value="Search UCF HR"/><input type="submit" /></li-->
+								<li class="searchBar"><?php get_search_form(); ?></li>
 							<?php } else { }; ?>
-							
+
 
 							<?php if( have_rows('links') ): ?>
-								<?php while( have_rows('links') ): the_row(); 
+								<?php while( have_rows('links') ): the_row();
 
 									// Get sub field values.
 									$background = get_sub_field('background_photo');
@@ -202,7 +202,7 @@
 									</li>
 									<style type="text/css">
 										li.<?php echo $shortcode[0]; ?> {
-											background: url('<?php echo $background; ?>') no-repeat center center; 
+											background: url('<?php echo $background; ?>') no-repeat center center;
 											background-size:cover;
 										}
 									</style>
@@ -218,23 +218,23 @@
 
 
 
-				
+
 			</div>
 		</div>
 	</div>
 </div>
 
 <!-- Container -->
-<?php 
-	$backgroundphotosocial = get_field('background_photo'); 
+<?php
+	$backgroundphotosocial = get_field('background_photo');
 ?>
 <div class="container-fluid social<?php if (!empty($backgroundphotosocial)) { echo ' img'; } else { }; ?>" id="<?php echo $socialnav[0]; ?>">
 	<div class="container">
-		
+
 		<div class="row">
 			<div class="col col-lg-6">
-				<h3 class="title"><?php the_field('social_title'); ?> 
-					<!--a href="#!"><img src="<?php echo esc_url( get_stylesheet_directory_uri()); ?>/img/icon_fb.png" class="socialicon" /></a> 
+				<h3 class="title"><?php the_field('social_title'); ?>
+					<!--a href="#!"><img src="<?php echo esc_url( get_stylesheet_directory_uri()); ?>/img/icon_fb.png" class="socialicon" /></a>
 					<a href="#!"><img src="<?php echo esc_url( get_stylesheet_directory_uri()); ?>/img/icon_tw.png" class="socialicon" /></a-->
 				</h3>
 				<?php the_field('social_content'); ?></div>
@@ -247,8 +247,8 @@
 </div>
 
 <!-- Container -->
-<?php 
-	$backgroundphotoexplore = get_field('background_photo_explore'); 
+<?php
+	$backgroundphotoexplore = get_field('background_photo_explore');
 ?>
 <div class="container-fluid explore <?php the_field('background_color_explore'); ?><?php if (!empty($backgroundphotoexplore)) { echo ' img'; } else { }; ?>" id="<?php echo $explorenav[0]; ?>">
 	<div class="container">
@@ -257,21 +257,21 @@
 				<h3 class="title"><?php the_field('explore_title'); ?></h3>
 				<?php the_field('explore_content'); ?>
 				<div class="search">
-					<?php get_search_form(); ?>					
+					<?php get_search_form(); ?>
 					<!--input type="text" value="Search UCF Human Resources" /><input type="submit" /-->
 				</div>
 			</div>
 			<div class="right col-4">
 
 			<?php if( have_rows('side_links') ): ?>
-    			<?php while( have_rows('side_links') ): the_row(); 
+    			<?php while( have_rows('side_links') ): the_row();
 					$title = get_sub_field('title');?>
 
 					<h5><?php echo $title; ?></h5>
 
 					<?php if( have_rows('links') ): ?>
 						<ul class="pagelist">
-						<?php while( have_rows('links') ): the_row(); 
+						<?php while( have_rows('links') ): the_row();
 							$text = get_sub_field('link_text');
 							$link = get_sub_field('link_destination');
 							$openw = get_sub_field('open_in_a_new_window');
@@ -282,7 +282,7 @@
 						</ul>
 					<?php endif; ?>
 
-				
+
 				<?php endwhile; ?>
 			<?php endif; ?>
 
@@ -293,8 +293,8 @@
 </div>
 
 <!-- Container -->
-<?php 
-	$backgroundphotostats = get_field('background_photo_statistics'); 
+<?php
+	$backgroundphotostats = get_field('background_photo_statistics');
 ?>
 <div class="container-fluid stats <?php the_field('background_color_statistics'); ?><?php if (!empty($backgroundphotostats)) { echo ' img'; } else { }; ?>" id="<?php echo $statsnav[0]; ?>">
 	<div class="container">
@@ -304,23 +304,23 @@
 				<p><?php the_field('statistics_content'); ?></p>
 			</div>
 			<div class="right col-6">
-				
 
 
-		
-						
-				<?php if( have_rows('stats') ): 
+
+
+
+				<?php if( have_rows('stats') ):
 					$counter = '0';
 					?>
 					<ul class="statistics">
-					<?php while( have_rows('stats') ): the_row(); 
+					<?php while( have_rows('stats') ): the_row();
 						$icon = get_sub_field('icon');
 						$number = get_sub_field('number');
 						$title = get_sub_field('title');
 						$description = get_sub_field('description');
 						$prefix = get_sub_field('prefix');
 						$suffix = get_sub_field('suffix');
-						
+
 						if ($counter == '0') {
 							$order = 'first';
 						}
@@ -342,7 +342,7 @@
 							<p><em><?php echo $description; ?></em></p>
 						</li>
 
-					<?php 
+					<?php
 						$counter++;
 						endwhile; ?>
 
@@ -357,8 +357,8 @@
 </div>
 
 <!-- Container -->
-<?php 
-	$backgroundphotoemp = get_field('background_photo_employee'); 
+<?php
+	$backgroundphotoemp = get_field('background_photo_employee');
 ?>
 <div class="container-fluid eotm <?php the_field('background_color_employee'); ?><?php if (!empty($backgroundphotoemp)) { echo ' img'; } else { }; ?>" id="<?php echo $employeenav[0]; ?>">
 	<div class="container">
@@ -366,7 +366,7 @@
 			<div class="left col-6">
 
 				<?php if( have_rows('employee_information') ): ?>
-					<?php while( have_rows('employee_information') ): the_row(); 
+					<?php while( have_rows('employee_information') ): the_row();
 
 						// Get sub field values.
 						$name = get_sub_field('name');
@@ -389,10 +389,10 @@
 						<?php if ($readmore !== '') { ?>
 							<a href="<?php echo $readmore; ?>" class="btn readmore">Read More</a>
 						<?php } ?>
-			
+
 					<?php endwhile; ?>
 				<?php endif; ?>
-			
+
 			</div>
 		</div>
 	</div>
@@ -400,8 +400,8 @@
 </div>
 
 <!-- Container -->
-<?php 
-	$backgroundphotonews = get_field('background_photo_news'); 
+<?php
+	$backgroundphotonews = get_field('background_photo_news');
 ?>
 <div class="container-fluid blog <?php the_field('background_color_news'); ?><?php if (!empty($backgroundphotonews)) { echo ' img'; } else { }; ?>" id="<?php echo $newsnav[0]; ?>">
 	<div class="container">
@@ -409,7 +409,7 @@
 			<div class="left col-12">
 				<h3 class="title"><?php the_field('news_title'); ?></h3>
 
-				<?php 
+				<?php
 
 					$posts = get_posts( array(
 						'post_type' => 'post',
@@ -424,15 +424,15 @@
 						)
 					)
 				);
-				
+
 				if( $posts ) { ?>
 
 						<ul class="posts">
-					
+
 						<?php foreach( $posts as $post ) {
-							
+
 							$category = get_the_category();
-							
+
 							?>
 
 							<li>
@@ -453,12 +453,12 @@
 					<?php };
 				?>
 
-				
+
 			</div>
 			<!--div class="right col-4">
 				<h3 class="title"><?php the_field('featured_news_title'); ?></h3>
-				
-				<?php 
+
+				<?php
 
 					$posts = get_posts( array(
 						'post_type' => 'post',
@@ -473,13 +473,13 @@
 						)
 					)
 				);
-				
+
 				if( $posts ) { ?>
 
 					<div class="article">
-					
-						<?php foreach( $posts as $post ) { 
-							
+
+						<?php foreach( $posts as $post ) {
+
 							$category = get_the_category();
 
 							?>
@@ -508,7 +508,7 @@
 
 
 
-				
+
 			</div-->
 
 			<a href="/news/" class="button black" style="margin-left: auto;font-size: 14px;">More News</a>
