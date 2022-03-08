@@ -2721,6 +2721,36 @@ h2.ucf-events-title {
     }
 }
 
+@media (min-width:1800px) {
+  video#homevideo {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.home-hero-image {
+  display: none;
+}
+
+@media (max-width: 575px) {
+  video#homevideo {
+    display: none;
+  }
+  .home-hero-image {
+    /* width: 100%; */
+    display: inline-block;
+    height: auto;
+    /*position: absolute;*/
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    max-width: 100% !important;
+  }
+}
+
 nav.anchornav {
     padding-left: 0px;
 }
