@@ -97,7 +97,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -135,7 +135,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -173,7 +173,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -211,7 +211,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -249,7 +249,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -287,7 +287,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -325,7 +325,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -363,7 +363,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -401,7 +401,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -439,7 +439,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -477,7 +477,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -515,7 +515,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -553,7 +553,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -591,7 +591,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -629,7 +629,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -667,7 +667,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -705,7 +705,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -743,7 +743,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -781,7 +781,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -819,7 +819,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -857,7 +857,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -895,7 +895,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -933,7 +933,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -971,7 +971,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -1009,7 +1009,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -1047,7 +1047,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -1085,7 +1085,7 @@
 				<?php
 
 				$params = array(
-					$limit => 999,
+					limit => 999,
 				);
 
 				//search in articles pod
@@ -1202,7 +1202,7 @@
 		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
 
 		$params = array(
-			$limit => 999,
+			limit => 999,
 			where => "category.meta_value = '$category'",
 		);
 
@@ -1240,7 +1240,7 @@
 		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
 
 		$params = array(
-			$limit => 999,
+			limit => 999,
 			where => "category.meta_value = '$category'",
 		);
 
@@ -1278,7 +1278,7 @@
 		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
 
 		$params = array(
-			$limit => 999,
+			limit => 999,
 			where => "category.meta_value = '$category'",
 		);
 
@@ -1316,7 +1316,7 @@
 		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
 
 		$params = array(
-			$limit => 999,
+			limit => 999,
 			where => "category.meta_value = '$category'",
 		);
 
@@ -1354,7 +1354,7 @@
 		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
 
 		$params = array(
-			$limit => 999,
+			limit => 999,
 			where => "category.meta_value = '$category'",
 		);
 
@@ -1392,7 +1392,7 @@
 		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
 
 		$params = array(
-			$limit => 999,
+			limit => 999,
 			where => "category.meta_value = '$category'",
 		);
 
@@ -1430,7 +1430,7 @@
 		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
 
 		$params = array(
-			$limit => 999,
+			limit => 999,
 			where => "category.meta_value = '$category'",
 		);
 
@@ -1468,7 +1468,7 @@
 		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
 
 		$params = array(
-			$limit => 999,
+			limit => 999,
 			where => "category.meta_value = '$category'",
 		);
 
@@ -1506,7 +1506,7 @@
 		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
 
 		$params = array(
-			$limit => 999,
+			limit => 999,
 			where => "category.meta_value = '$category'",
 		);
 
@@ -1544,7 +1544,7 @@
 		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
 
 		$params = array(
-			$limit => 999,
+			limit => 999,
 			where => "category.meta_value = '$category'",
 		);
 
@@ -1582,7 +1582,7 @@
 		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
 
 		$params = array(
-			$limit => 999,
+			limit => 999,
 			where => "category.meta_value = '$category'",
 		);
 
@@ -1620,7 +1620,7 @@
 		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
 
 		$params = array(
-			$limit => 999,
+			limit => 999,
 			where => "category.meta_value = '$category'",
 		);
 
@@ -1658,7 +1658,7 @@
 		$slug = strtolower(trim(preg_replace('/[\s-]+/', '-', preg_replace('/[^A-Za-z0-9-]+/', '-', preg_replace('/[&]/', 'and', preg_replace('/[\']/', '', iconv('UTF-8', 'ASCII//TRANSLIT', $category))))), '-'));
 
 		$params = array(
-			$limit => 999,
+			limit => 999,
 			where => "category.meta_value = '$category'",
 		);
 
