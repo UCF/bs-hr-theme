@@ -7,37 +7,6 @@
 <?php get_header(); the_post(); ?>
 
 
-<!-- Hero image and title -->
-<?php if( get_field('header_type') == 'Image' ) { ?>
-
-	<div class="hero container-fluid" style="background:url('<?php the_field('header_image');?>') no-repeat center center; background-size:cover;">
-		<div class="container">
-			<div class="headerText">
-				<h1><?php the_field('page_title'); ?></h1><br/><h2><?php the_field('page_subtitle'); ?></h2>
-			</div>
-		</div>
-	</div>
-
-<?php } if( get_field('header_type') == 'Video' ) { ?>
-
-	<div class="hero video container-fluid">
-		<div class="container">
-			<div class="headerText">
-				<h1><?php the_field('page_title'); ?></h1><br/><h2><?php the_field('page_subtitle'); ?></h2>
-			</div>
-		</div>
-		<video playsinline autoplay muted loop poster="<?php the_field('video_placeholder'); ?>" id="homevideo" class="homevideo">
-		<source src="<?php the_field('header_video'); ?>" type="video/mp4">
-		Your browser does not support the video tag.
-		</video>
-		<img class="home-hero-image" src=" <?php the_field('video_placeholder'); ?> " alt="Mobile header image fallback">
-	</div>
-
-
-
-<?php } ?>
-
-
 <!-- Anchor navigation below hero -->
 <div class="subnav container-fluid">
 	<div class="container">

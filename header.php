@@ -12,7 +12,33 @@
 			});
 		 </script>
 		 <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-yJpxAFV0Ip/w63YkZfDWDTU6re/Oc3ZiVqMa97pi8uPt92y0wzeK3UFM2yQRhEom" crossorigin="anonymous">
-
+		 
+		<?php
+			if ( is_singular(
+				array( 
+					'about_orlando', 
+					'benefits_cycle', 
+					'book', 
+					'contact_questions', 
+					'currentemployees', 
+					'employee_of_the_mont', 
+					'employee_perks', 
+					'faqs', 
+					'forms_and_documents', 
+					'liaisons_and_supervi', 
+					'mission_vision',
+					'opportunities',
+					'org_chart',
+					'prospective_employee',
+					'talent_acquisition',
+					'team_member',
+					'testimonial',
+					'tips_and_tricks'
+				)
+			) ) {
+				echo '<meta name="robots" content="noindex,nofollow">';
+			} 
+		?>
 
 	</head>
 	<body ontouchstart <?php body_class(); ?>>
