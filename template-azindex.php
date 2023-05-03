@@ -91,6 +91,9 @@
 				}
 
 				echo '</div>';
+
+				// Reset pods object for next iteration
+				$pods->reset();
 			}
 
 			// Generate div for numbers
