@@ -19,7 +19,7 @@
 	</div>
 </div>
 
-<!-- Container -->
+<!-- A-Z Index Alphabetical List Container -->
 <div class="container-fluid azcontentbox alpha white active">
 	<div class="container">
 		<div class="row nav">
@@ -80,9 +80,8 @@
 			for ($i = 65; $i <= 90; $i++) {
 				$char = chr($i);
 				$charLower = strtolower($char);
-				$active = $char == 'A';
 
-				echo '<div class="left col-12 alphafilelist alpha' . $char . ($active ? ' active' : '') . '" id="alpha' . $char . '">';
+				echo '<div class="left col-12 alphafilelist alpha' . $char . ' active" id="alpha' . $char . '">';
 				echo '<h3 class="title">' . $char . '</h3>';
 
 				if (!empty($documents[$charLower])) {
@@ -102,7 +101,7 @@
 			$char = '#';
 
 			echo '<div class="left col-12 alphafilelist alpha' . $char . '" id="alpha' . $char . '">';
-			echo '<h3 class="title">' . $char . '</h3>';
+			echo '<h3 class="title">' . '#' . '</h3>';
 
 			$numDocs = array_filter($documents, function ($key) {
 				return ctype_digit($key);
