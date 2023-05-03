@@ -59,6 +59,24 @@
 			//search in articles pod
 			$pods = pods('forms_and_documents', $params);
 
+			$documents = array();
+
+			while ($pods->fetch()) {
+				$documentName = $pods->display('name');
+				$firstChar = strtolower($documentName[0]);
+
+				if ($pods->display('file_upload')) {
+					$fileurl = $pods->display('file_upload');
+				} else {
+					$fileurl = $pods->display('location_url');
+				}
+
+				$documents[$firstChar][] = array(
+					'name' => $documentName,
+					'url' => $fileurl
+				);
+			}
+
 			for ($i = 65; $i <= 90; $i++) {
 				$char = chr($i);
 				$charLower = strtolower($char);
@@ -67,33 +85,17 @@
 				echo '<div class="left col-12 alphafilelist alpha' . $char . ($active ? ' active' : '') . '" id="alpha' . $char . '">';
 				echo '<h3 class="title">' . $char . '</h3>';
 
-				//loop through results
-				if (0 < $pods->total()) {
-
+				if (!empty($documents[$charLower])) {
 					echo '<ul class="dlList">';
 
-					while ($pods->fetch()) {
-
-						$documentName = $pods->display('name');
-
-						if ($pods->display('file_upload')) {
-							$fileurl = $pods->display('file_upload');
-						} else {
-							$fileurl = $pods->display('location_url');
-						}
-
-						if (strcasecmp($documentName[0], $charLower) == 0) {
-							echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
-						}
+					foreach ($documents[$charLower] as $doc) {
+						echo '<li><a href="' . $doc['url'] . '" target="_blank">' . $doc['name'] . '</a></li>';
 					}
 
 					echo '</ul>';
 				}
 
 				echo '</div>';
-
-				// Reset pods object for next iteration
-				$pods->reset();
 			}
 
 			// Generate div for numbers
@@ -102,23 +104,16 @@
 			echo '<div class="left col-12 alphafilelist alpha' . $char . '" id="alpha' . $char . '">';
 			echo '<h3 class="title">' . $char . '</h3>';
 
-			//loop through results
-			if (0 < $pods->total()) {
+			$numDocs = array_filter($documents, function ($key) {
+				return ctype_digit($key);
+			}, ARRAY_FILTER_USE_KEY);
 
+			if (!empty($numDocs)) {
 				echo '<ul class="dlList">';
 
-				while ($pods->fetch()) {
-
-					$documentName = $pods->display('name');
-
-					if ($pods->display('file_upload')) {
-						$fileurl = $pods->display('file_upload');
-					} else {
-						$fileurl = $pods->display('location_url');
-					}
-
-					if (ctype_digit($documentName[0])) {
-						echo '<li><a href="' . $fileurl . '" target="_blank">' . $documentName . '</a></li>';
+				foreach ($numDocs as $numberDocs) {
+					foreach ($numberDocs as $doc) {
+						echo '<li><a href="' . $doc['url'] . '" target="_blank">' . $doc['name'] . '</a></li>';
 					}
 				}
 
