@@ -70,11 +70,13 @@
 					$fileurl = $pods->display('location_url');
 				}
 
+				//If the first character is a number, store in 'num' array
 				if (ctype_digit($firstChar)) {
 					$documents['num'][] = array(
 						'name' => $documentName,
 						'url' => $fileurl
 					);
+				//If the first character is a letter, store in letter array
 				} else {
 					$documents[$firstChar][] = array(
 						'name' => $documentName,
@@ -111,8 +113,8 @@
 			if (!empty($documents['num'])) {
 				echo '<ul class="dlList">';
 
-				foreach ($documents['num'] as $doc) {
-					echo '<li><a href="' . $doc['url'] . '" target="_blank">' . $doc['name'] . '</a></li>';
+				foreach ($documents['num'] as $docNum) {
+					echo '<li><a href="' . $docNum['url'] . '" target="_blank">' . $docNum['name'] . '</a></li>';
 				}
 
 				echo '</ul>';
