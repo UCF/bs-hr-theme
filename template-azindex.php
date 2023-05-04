@@ -60,7 +60,7 @@
 			$documents = array();
 
 			while ($pods->fetch()) {
-				//Store document name for display, and sort first letter of document name for easy fetching later
+				// Store document name for display, and sort first letter of document name for easy fetching later
 				$documentName = $pods->display('name');
 				$firstChar = strtolower($documentName[0]);
 
@@ -70,10 +70,17 @@
 					$fileurl = $pods->display('location_url');
 				}
 
-				$documents[$firstChar][] = array(
-					'name' => $documentName,
-					'url' => $fileurl
-				);
+				if (ctype_digit($firstChar)) {
+					$documents['num'][] = array(
+						'name' => $documentName,
+						'url' => $fileurl
+					);
+				} else {
+					$documents[$firstChar][] = array(
+						'name' => $documentName,
+						'url' => $fileurl
+					);
+				}
 			}
 
 			//Create a div for each letter/number and populate with documents
@@ -98,21 +105,14 @@
 			}
 
 			// Generate div for numbers
-
-			echo '<div class="left col-12 alphafilelist alpha' . '#' . '" id="alpha' . '#' . '">';
+			echo '<div class="left col-12 alphafilelist alphaNum active" id="alphaNum">';
 			echo '<h3 class="title">' . '#' . '</h3>';
 
-			$numDocs = array_filter($documents, function ($key) {
-				return ctype_digit($key);
-			}, ARRAY_FILTER_USE_KEY);
-
-			if (!empty($numDocs)) {
+			if (!empty($documents['num'])) {
 				echo '<ul class="dlList">';
 
-				foreach ($numDocs as $numberDocs) {
-					foreach ($numberDocs as $doc) {
-						echo '<li><a href="' . $doc['url'] . '" target="_blank">' . $doc['name'] . '</a></li>';
-					}
+				foreach ($documents['num'] as $doc) {
+					echo '<li><a href="' . $doc['url'] . '" target="_blank">' . $doc['name'] . '</a></li>';
 				}
 
 				echo '</ul>';
