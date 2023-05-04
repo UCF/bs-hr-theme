@@ -13,8 +13,6 @@
 		<ul class="formsNav">
 			<li><a href="#!" class="alpha active">Alphabetical</a></li>
 			<li><a href="#!" class="cat">Category</a></li>
-			<li style="display:none;"><a href="#!" class="key">Keyword</a></li>
-			<li style="display:none;"><a href="#!" class="cont">Content</a></li>
 		</ul>
 	</div>
 </div>
@@ -56,12 +54,13 @@
 				'limit' => 999,
 			);
 
-			//search in articles pod
+			//Fetch all forms_and_documents pods items and store in $documents array
 			$pods = pods('forms_and_documents', $params);
 
 			$documents = array();
 
 			while ($pods->fetch()) {
+				//Store document name for display, and sort first letter of document name for easy fetching later
 				$documentName = $pods->display('name');
 				$firstChar = strtolower($documentName[0]);
 
@@ -77,6 +76,7 @@
 				);
 			}
 
+			//Create a div for each letter/number and populate with documents
 			for ($i = 65; $i <= 90; $i++) {
 				$char = chr($i);
 				$charLower = strtolower($char);
@@ -98,9 +98,8 @@
 			}
 
 			// Generate div for numbers
-			$char = '#';
 
-			echo '<div class="left col-12 alphafilelist alpha' . $char . '" id="alpha' . $char . '">';
+			echo '<div class="left col-12 alphafilelist alpha' . '#' . '" id="alpha' . '#' . '">';
 			echo '<h3 class="title">' . '#' . '</h3>';
 
 			$numDocs = array_filter($documents, function ($key) {
