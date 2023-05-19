@@ -17,6 +17,7 @@
 
         </div>
     </div>
+</div>
 
     <div class="container-fluid content-container white">
         <div class="container">
@@ -65,6 +66,7 @@
 
         </div>
     </div>
+</div>
 
     <div class="container-fluid content-container white">
         <div class="container">
