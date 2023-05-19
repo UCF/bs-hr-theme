@@ -329,7 +329,7 @@
 </div>
 
 <!-- Container -->
-<div class="container-fluid help gold">
+<div class="container-fluid help gold" style="display:none;">
 	<div class="container">
 		<div class="row">
 			<div class="left col-12">
@@ -364,7 +364,7 @@
 	<div class="imgOverlay"></div>
 </div>
 
-<div class="container-fluid helpContent gray">
+<div class="container-fluid helpContent gray" style="display:none;">
 	<div class="container">
 		<div class="row">
 

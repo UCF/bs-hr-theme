@@ -138,68 +138,22 @@ if ( !function_exists( 'ucf_rss_display_hr_after' ) ) {
 }
 
 /*
- * Function to fetch posts and search contents of custom post types
+ * Extend Search to Custom Fields
 */
-
-add_action( 'pre_get_posts', 'search_metadata', 9 );
-
-function search_metadata( $query )
-{
-	if (! $query->is_main_query() || !is_search()) {
-		return;
-	}
-
-	add_filter('posts_join', function ($join) {
-		global $wpdb;
-		return $join . ' LEFT JOIN ' . $wpdb->postmeta . ' ON ' . $wpdb->posts . '.ID = ' . $wpdb->postmeta . '.post_id ';
-	});
-
-	add_filter('posts_where', function ($where) {
-		global $wpdb;
-
-		$or = array(
-			"(" . $wpdb->posts . ".post_title LIKE $1)",
-			"(" . $wpdb->postmeta . ".meta_value LIKE $1)",
-		);
-
-		if (is_main_query() && is_search()) {
-			$where = preg_replace(
-				"/\(\s*" . $wpdb->posts . ".post_title\s+LIKE\s*(\'[^\']+\')\s*\)/",
-				implode(' OR ', $or),
-				$where
-			);
-		}
-
-		return $where;
-	});
-
-	add_filter('posts_distinct', function () {
-		global $wpdb;
-		return "DISTINCT";
-	});
-}
-
-
-/**
- * Extend WordPress search to include custom fields
- */
 function cf_search_join( $join ) {
     global $wpdb;
 
     if ( is_search() ) {    
         $join .=' LEFT JOIN '.$wpdb->postmeta. ' ON '. $wpdb->posts . '.ID = ' . $wpdb->postmeta . '.post_id ';
     }
-
+    
     return $join;
 }
 add_filter('posts_join', 'cf_search_join' );
 
-/**
- * Modify the search query with posts_where
- */
 function cf_search_where( $where ) {
     global $pagenow, $wpdb;
-
+   
     if ( is_search() ) {
         $where = preg_replace(
             "/\(\s*".$wpdb->posts.".post_title\s+LIKE\s*(\'[^\']+\')\s*\)/",
@@ -210,9 +164,6 @@ function cf_search_where( $where ) {
 }
 add_filter( 'posts_where', 'cf_search_where' );
 
-/**
- * Prevent duplicates
- */
 function cf_search_distinct( $where ) {
     global $wpdb;
 

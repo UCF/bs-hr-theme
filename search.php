@@ -6,31 +6,24 @@
 <!-- Hero image and title -->
 <div class="hero container-fluid" style="background:url(<?php the_field('header_image', 20);?>) no-repeat center center; background-size:cover;">
 
-<?php
+<?php if ( have_posts() ) { ?>
 
-if ( have_posts() ) { ?>
+    <div class="container">
+        <div class="headerText">
 
-<div class="container">
-		<div class="headerText">
-
-			<h1>"<em><?php the_search_query(); ?></em>"</h1><br/>
+            <h1>"<em><?php the_search_query(); ?></em>"</h1><br/>
             
             <h2>Search Results</h2>
 
-		</div>
-	</div>
-</div>
+        </div>
+    </div>
 
-<div class="container-fluid content-container white">
-    <div class="container">
-        <div class="row">
-            <div class="col col-lg-12 ">
+    <div class="container-fluid content-container white">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-12 ">
 
-            
-  
-                <?php 
-
-                    while ( have_posts() ) {
+                    <?php while ( have_posts() ) {
 
                         the_post(); 
 
@@ -48,39 +41,45 @@ if ( have_posts() ) { ?>
                                     <p><?php the_excerpt(); ?></p>
                                 </a>
 
-                        <?php  } ?>
+                    <?php  } ?>
                 
                         <div class="pagination">
                             <div class="nav-previous"><?php previous_posts_link( 'Previous Page' ); ?></div>
                             <div class="nav-next"><?php next_posts_link( 'Next Page' ); ?></div>
                         </div>
 
-                            </div>
-                        </div>
-                    </div>
                 </div>
+            </div>
+        </div>
+    </div>
 
-                    <?php } else { ?>
-                        
-                        
-                        <div class="container">
-                            <div class="headerText">
+<?php } else { ?>
+    
+    
+    <div class="container">
+        <div class="headerText">
 
-                                <h1>"<em><?php the_search_query(); ?></em>"</h1><br/>
-                                
-                                <h2>No Results</h2>
+            <h1>"<em><?php the_search_query(); ?></em>"</h1><br/>
+            
+            <h2>No Results</h2>
 
-                            </div>
-                        </div>
-                    </div>
+        </div>
+    </div>
+
+    <div class="container-fluid content-container white">
+        <div class="container">
+            <div class="row">
+                <div class="col col-lg-12 ">
+
+                    <p class="no-results">No Results</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
 
 
-                        <?php  } ?>
-
-               
-
-
-
+<?php  } ?>
 
 <?php get_footer(); ?>
 
