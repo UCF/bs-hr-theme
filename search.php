@@ -1,10 +1,10 @@
 <?php /*require_once get_template_directory() . '/index.php'; */?>
 
-<?php get_header(); the_post(); ?>
+<?php get_header(); ?>
 
 
 <!-- Hero image and title -->
-<div class="hero container-fluid" style="background:url(<?php the_field('header_image', 20);?>) no-repeat center center; background-size:cover;">
+<div class="hero container-fluid">
 
 <?php if ( have_posts() ) { ?>
 
@@ -81,7 +81,7 @@
     </div>
 
 
-<?php  } ?>
+<?php } ?>
 
 <?php get_footer(); ?>
 
