@@ -3972,3 +3972,24 @@ body.page-template-template-inside .container h3 {
     top:10px;
   }
 }
+
+/* Fixing search results (and no results) display */
+body.search.search-results .hero.container-fluid,
+body.search.search-no-results .hero.container-fluid{
+    padding-top: 50px;
+    height: auto!important;
+    padding-bottom: 50px;
+    background: #000!important;
+}
+
+body.search.search-results .hero .headerText h2,
+body.search.search-no-results .hero .headerText h2 {
+    font-size: 16px;
+    background: #404040;
+}
+
+body.search.search-results .hero .headerText h1,
+body.search.search-no-results .hero .headerText h1 {
+    font-size: 30px;
+    font-weight: 700!important;
+}
