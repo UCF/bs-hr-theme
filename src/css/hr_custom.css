@@ -3993,3 +3993,20 @@ body.search.search-no-results .hero .headerText h1 {
     font-size: 30px;
     font-weight: 700!important;
 }
+
+body.search-results .header-media-background-wrap, .header-content,
+body.search-results .header-media-controlfix,
+body.search-no-results .header-media-background-wrap, .header-content,
+body.search-no-results .header-media-controlfix {
+    display: none;
+}
+
+body.search-results .header-media-default,
+body.search-no-results .header-media-default {
+    min-height: auto;
+}
+
+body.search-results .navbar-custom, .navbar-mainsite,
+body.search-no-results .navbar-custom, .navbar-mainsite {
+    background: #000;
+}
