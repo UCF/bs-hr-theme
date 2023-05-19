@@ -4008,5 +4008,6 @@ body.search-no-results .header-media-default {
 
 body.search-results .navbar-custom, .navbar-mainsite,
 body.search-no-results .navbar-custom, .navbar-mainsite {
-    background: #000;
+    background: #404040 !important;
+    padding: 0px 20px !important;
 }
