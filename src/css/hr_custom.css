@@ -3994,9 +3994,9 @@ body.search.search-no-results .hero .headerText h1 {
     font-weight: 700!important;
 }
 
-body.search-results .header-media-background-wrap, .header-content,
+body.search-results .header-media-background-wrap,
 body.search-results .header-media-controlfix,
-body.search-no-results .header-media-background-wrap, .header-content,
+body.search-no-results .header-media-background-wrap,
 body.search-no-results .header-media-controlfix {
     display: none;
 }
