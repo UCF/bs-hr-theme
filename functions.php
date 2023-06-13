@@ -7,26 +7,26 @@ include_once 'includes/meta.php';
 // Add other includes to this file as needed.
 
 function wpse_298888_posts_where( $where, $query ) {
-    global $wpdb;
+	global $wpdb;
 
-    $starts_with = esc_sql( $query->get( 'starts_with' ) );
+	$starts_with = esc_sql( $query->get( 'starts_with' ) );
 
-    if ( $starts_with ) {
-        $where .= " AND $wpdb->posts.post_title LIKE '$starts_with%'";
-    }
+	if ( $starts_with ) {
+		$where .= " AND $wpdb->posts.post_title LIKE '$starts_with%'";
+	}
 
-    return $where;
+	return $where;
 }
 add_filter( 'posts_where', 'wpse_298888_posts_where', 10, 2 );
 
 
 /**
-* Allow Pods Templates to use shortcodes
-*/
+ * Allow Pods Templates to use shortcodes
+ */
 add_filter( 'pods_shortcode', function( $tags )  {
-  $tags[ 'shortcodes' ] = true;
+	$tags[ 'shortcodes' ] = true;
 
-  return $tags;
+	return $tags;
 
 });
 
@@ -37,21 +37,21 @@ add_image_size( 'square-sixhundred', 600, 600, true);
 
 /**
 
-* Disable the UCF WP Theme's template redirect overrides so that we can
+ * Disable the UCF WP Theme's template redirect overrides so that we can
 
-* define our own in this theme.
+ * define our own in this theme.
 
-*
+ *
 
-* @since 1.0.0
+ * @since 1.0.0
 
-* @author Jo Dickson
+ * @author Jo Dickson
 
-*/
+ */
 
 function today_reenable_templates() {
 
-  remove_action( 'template_redirect', 'ucfwp_kill_unused_templates' );
+	remove_action( 'template_redirect', 'ucfwp_kill_unused_templates' );
 
 }
 
@@ -141,74 +141,36 @@ if ( !function_exists( 'ucf_rss_display_hr_after' ) ) {
  * Extend Search to Custom Fields
 */
 function cf_search_join( $join ) {
-    global $wpdb;
+	global $wpdb;
 
-    if ( is_search() ) {
-        $join .=' LEFT JOIN '.$wpdb->postmeta. ' ON '. $wpdb->posts . '.ID = ' . $wpdb->postmeta . '.post_id ';
-    }
+	if ( is_search() ) {
+		$join .=' LEFT JOIN '.$wpdb->postmeta. ' ON '. $wpdb->posts . '.ID = ' . $wpdb->postmeta . '.post_id ';
+	}
 
-    return $join;
+	return $join;
 }
 add_filter('posts_join', 'cf_search_join' );
 
 function cf_search_where( $where ) {
-    global $pagenow, $wpdb;
+	global $pagenow, $wpdb;
 
-    if ( is_search() ) {
-        $where = preg_replace(
-            "/\(\s*".$wpdb->posts.".post_title\s+LIKE\s*(\'[^\']+\')\s*\)/",
-            "(".$wpdb->posts.".post_title LIKE $1) OR (".$wpdb->postmeta.".meta_value LIKE $1)", $where );
-    }
+	if ( is_search() ) {
+		$where = preg_replace(
+			"/\(\s*".$wpdb->posts.".post_title\s+LIKE\s*(\'[^\']+\')\s*\)/",
+			"(".$wpdb->posts.".post_title LIKE $1) OR (".$wpdb->postmeta.".meta_value LIKE $1)", $where );
+	}
 
-    return $where;
+	return $where;
 }
 add_filter( 'posts_where', 'cf_search_where' );
 
 function cf_search_distinct( $where ) {
-    global $wpdb;
+	global $wpdb;
 
-    if ( is_search() ) {
-        return "DISTINCT";
-    }
+	if ( is_search() ) {
+		return "DISTINCT";
+	}
 
-    return $where;
+	return $where;
 }
 add_filter( 'posts_distinct', 'cf_search_distinct' );
-
-/**
- * Returns search results page header
- *
- * @author Mike Setzer
- * @since 0.0.0
- * @param mixed $obj A queried object (e.g. WP_Post, WP_Term), or null
- * @return string Header title text
- **/
-
-add_filter('ucfwp_get_header_title_before', 'my_custom_search_title', 10, 2);
-
-function my_custom_search_title($title, $obj) {
-	if (is_search()) {
-		$title = get_search_query();
-	}
-
-	return $title;
-}
-
-/**
- * Returns search result page subtitle
- *
- * @author Mike Setzer
- * @since 0.0.0
- * @param mixed $obj A queried object (e.g. WP_Post, WP_Term), or null
- * @return string Header subtitle text
- **/
-
-add_filter('ucfwp_get_header_subtitle_before', 'my_custom_search_subtitle', 10, 2);
-
-function my_custom_search_subtitle($subtitle, $obj) {
-	if (is_search()) {
-		$subtitle = "Search Results";
-	}
-
-	return $subtitle;
-}
