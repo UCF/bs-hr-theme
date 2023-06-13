@@ -1,6 +1,5 @@
 <?php /*require_once get_template_directory() . '/index.php'; */?>
 
-<?php wp_reset_postdata(); ?>
 <?php get_header(); ?>
 
 <?php if ( have_posts() ) { ?>
