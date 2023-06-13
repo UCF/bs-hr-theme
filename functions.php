@@ -176,7 +176,7 @@ function cf_search_distinct( $where ) {
 add_filter( 'posts_distinct', 'cf_search_distinct' );
 
 /**
- * Returns texturized title text for use in the page header.
+ * Returns search results page header
  *
  * @author Mike Setzer
  * @since 0.0.0
@@ -184,57 +184,18 @@ add_filter( 'posts_distinct', 'cf_search_distinct' );
  * @return string Header title text
  **/
 
-function ucfwp_get_header_title( $obj ) {
-	$title = '';
+add_filter('ucfwp_get_header_title_before', 'my_custom_search_title', 10, 2);
 
-	// Exit early if the title has been overridden early
-	$title = (string) apply_filters( 'ucfwp_get_header_title_before', $title, $obj );
-	if ( !empty( $title ) ) {
-		return wptexturize( $title );
-	}
-
-	if ( is_404() ) {
-		// We intentionally don't add a fallback title for 404s;
-		// this allows us to add a custom h1 to the default 404 template.
-		$title = '';
-	} elseif( is_search() ){
+function my_custom_search_title($title, $obj) {
+	if (is_search()) {
 		$title = get_search_query();
 	}
-	else {
-		// Checks listed below are copied directly from WP core
-		// (see wp_get_document_title()).
-		// NOTE: We still include support for templates that are disabled in
-		// ucfwp_kill_unused_templates() in case a child theme re-enables
-		// one of those templates.
 
-		if ( is_search() ) {
-			$title = sprintf( __( 'Search Results for &#8220;%s&#8221;' ), get_search_query() );
-		} elseif ( is_front_page() ) {
-			$title = get_bloginfo( 'name', 'display' );
-		} elseif ( is_post_type_archive() ) {
-			$title = post_type_archive_title( '', false );
-		} elseif ( is_tax() ) {
-			$title = single_term_title( '', false );
-		} elseif ( is_home() || is_singular() ) {
-			$title = single_post_title( '', false );
-		} elseif ( is_category() || is_tag() ) {
-			$title = single_term_title( '', false );
-		} elseif ( is_author() && $author = get_queried_object() ) {
-			$title = $author->display_name;
-		} elseif ( is_year() ) {
-			$title = get_the_date( _x( 'Y', 'yearly archives date format' ) );
-		} elseif ( is_month() ) {
-			$title = get_the_date( _x( 'F Y', 'monthly archives date format' ) );
-		} elseif ( is_day() ) {
-			$title = get_the_date();
-		}
-	}
-
-	return wptexturize( $title );
+	return $title;
 }
 
 /**
- * Returns texturized subtitle text for use in the page header.
+ * Returns search result page subtitle
  *
  * @author Mike Setzer
  * @since 0.0.0
@@ -242,21 +203,12 @@ function ucfwp_get_header_title( $obj ) {
  * @return string Header subtitle text
  **/
 
-function ucfwp_get_header_subtitle( $obj ) {
-	if ( is_search() ) {
-		$subtitle = "Search Results";  // you can set your own subtitle here
-	} else {
-		$subtitle = '';
+add_filter('ucfwp_get_header_subtitle_before', 'my_custom_search_subtitle', 10, 2);
 
-		$subtitle = (string) apply_filters( 'ucfwp_get_header_subtitle_before', $subtitle, $obj );
-		if ( !empty( $subtitle ) ) {
-			return wptexturize( $subtitle );
-		}
-
-		$subtitle = do_shortcode( get_field( 'page_header_subtitle', $obj ) );
-
-		$subtitle = (string) apply_filters( 'ucfwp_get_header_subtitle_after', $subtitle, $obj );
+function my_custom_search_subtitle($subtitle, $obj) {
+	if (is_search()) {
+		$subtitle = "Search Results";
 	}
 
-	return wptexturize( $subtitle );
+	return $subtitle;
 }
