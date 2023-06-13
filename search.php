@@ -8,7 +8,7 @@
 
 <?php if ( have_posts() ) { ?>
 
-    <!--<div class="container">
+    <div class="container">
         <div class="headerText">
 
             <h1>"<em><?php the_search_query(); ?></em>"</h1><br/>
@@ -16,7 +16,7 @@
             <h2>Search Results</h2>
 
         </div>
-    </div>-->
+    </div>
 </div>
 
     <div class="container-fluid content-container white">
