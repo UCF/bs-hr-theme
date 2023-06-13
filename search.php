@@ -68,7 +68,7 @@
 	</div>
 	</div>
 
-	<div class="container-fluid content-container white">
+	<div class="container-fluid content-container white nrc">
 		<div class="container">
 			<div class="row">
 				<div class="col col-lg-12 ">
