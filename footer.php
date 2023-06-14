@@ -55,7 +55,7 @@
 		}
         ?>
 
-        <?php if ($anchor == "faqs") { /* just grab faqs panel if it exists -- it is hidden in the main template file */ ?>
+        <?php //if ($anchor == "faqs") { /* just grab faqs panel if it exists -- it is hidden in the main template file */ ?>
 
         <!-- Container -->
         <div class="container-fluid content-container <?php echo $background; ?>" id="<?php echo $anchor; ?>">
