@@ -39,7 +39,6 @@
 
 						<a href="<?php echo (!empty($url)) ? $url : get_post_permalink(); ?>" <?php echo (!empty($url)) ? 'target="_blank"' : ''; ?> class="result">
 							<h3><?php the_title(); ?></h3>
-							<p><?php the_excerpt(); ?></p>
 						</a>
 
 					<?php } ?>
