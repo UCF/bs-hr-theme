@@ -12,28 +12,25 @@
 
 					<?php while ( have_posts() ) {
 
-					the_post();
+						the_post();
 
-					$id = get_the_id();
-					$pod = pods( 'forms_and_documents', $id );
-					$url = $pod->field( 'location_url' );
-					$link = get_permalink();
+						$id = get_the_id();
+						$pod = pods( 'forms_and_documents', $id );
+						$url = $pod->field( 'location_url' );
+						$link = get_permalink();
+						?>
 
-					if ($url != ''): ?>
-					<a href="<?php echo $url; ?>" target="blank" class="result">
-						<?php else: ?>
-						<a href="<?php echo get_post_permalink() ?>" class="result">
-							<?php endif; ?>
+						<a href="<?php echo (!empty($url)) ? $url : get_post_permalink(); ?>" <?php echo (!empty($url)) ? 'target="_blank"' : ''; ?> class="result">
 							<h3><?php the_title(); ?></h3>
 							<p><?php the_excerpt(); ?></p>
 						</a>
 
-						<?php  } ?>
+					<?php } ?>
 
-						<div class="pagination">
-							<div class="nav-previous"><?php previous_posts_link( 'Previous Page' ); ?></div>
-							<div class="nav-next"><?php next_posts_link( 'Next Page' ); ?></div>
-						</div>
+					<div class="pagination">
+						<div class="nav-previous"><?php previous_posts_link( 'Previous Page' ); ?></div>
+						<div class="nav-next"><?php next_posts_link( 'Next Page' ); ?></div>
+					</div>
 
 				</div>
 			</div>
