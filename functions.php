@@ -222,7 +222,7 @@ function my_custom_search_subtitle($subtitle, $obj) {
  * @param mixed $obj A queried object (e.g. WP_Post, WP_Term), or null
  * @return string Modified header markup
  */
-add_filter('ucfwp_get_header_markup_before', 'my_custom_header_markup', 10, 2);
+/*add_filter('ucfwp_get_header_markup_before', 'my_custom_header_markup', 10, 2);
 
 function my_custom_header_markup($markup, $obj) {
 	if (is_search()) {
@@ -230,4 +230,18 @@ function my_custom_header_markup($markup, $obj) {
 	}
 
 	return $markup; // Return original markup for non-search pages
+}*/
+
+/**
+ * Remove UCFWP header on search pages
+ *
+ * @author Mike Setzer
+ * @since 0.0.0
+ */
+function my_custom_remove_header() {
+	if (is_search()) {
+		// Replace 'ucfwp_header_before' with the actual action your theme uses to display the header
+		remove_all_actions('ucfwp_header_before');
+	}
 }
+add_action('template_redirect', 'my_custom_remove_header');
