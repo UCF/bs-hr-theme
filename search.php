@@ -2,6 +2,14 @@
 
 <?php get_header(); ?>
 
+
+<!-- Hero image and title -->
+<div class="hero container-fluid">
+
+	<?php if ( have_posts() ) { ?>
+	
+</div>
+
 <div class="container-fluid content-container white">
 		<div class="container">
 			<div class="row">
