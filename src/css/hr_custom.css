@@ -4011,7 +4011,3 @@ body.search-no-results .navbar-custom, .navbar-mainsite {
     background: #404040 !important;
     padding: 0px 20px !important;
 }
-
-body.search > header > div > div.header-content {
-  min-height: 300px;
-}

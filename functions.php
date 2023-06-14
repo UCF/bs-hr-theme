@@ -188,7 +188,7 @@ add_filter('ucfwp_get_header_title_before', 'my_custom_search_title', 10, 2);
 
 function my_custom_search_title($title, $obj) {
 	if (is_search()) {
-		$title = get_search_query();
+		$title = '';
 	}
 
 	return $title;
@@ -207,7 +207,7 @@ add_filter('ucfwp_get_header_subtitle_before', 'my_custom_search_subtitle', 10, 
 
 function my_custom_search_subtitle($subtitle, $obj) {
 	if (is_search()) {
-		$subtitle = "Search Results";
+		$subtitle = '';
 	}
 
 	return $subtitle;

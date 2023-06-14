@@ -3,7 +3,25 @@
 <?php get_header(); ?>
 
 
+<div class="hero container-fluid">
 	<?php if ( have_posts() ) { ?>
+	<div class="header-content">
+		<div class="header-content-flexfix">
+			<div class="header-content-inner align-self-start pt-4 pt-sm-0 align-self-sm-center">
+				<div class="container">
+					<div class="d-inline-block bg-primary-t-1">
+						<h1 class="header-title">"<?php the_search_query(); ?>"</h1><br/>
+						<h2>Search Results</h2>
+					</div>
+					<div class="clearfix"></div>
+					<div class="d-inline-block bg-inverse">
+						<span class="header-subtitle">Search Results</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
 
 <div class="container-fluid content-container white">
 		<div class="container">
