@@ -213,3 +213,21 @@ function my_custom_search_subtitle($subtitle, $obj) {
 	return $subtitle;
 }
 
+/**
+ * Prevents UCFWP header from rendering on search pages
+ *
+ * @author Mike Setzer
+ * @since 0.0.0
+ * @param string $markup Current header markup
+ * @param mixed $obj A queried object (e.g. WP_Post, WP_Term), or null
+ * @return string Modified header markup
+ */
+add_filter('ucfwp_get_header_markup_before', 'my_custom_header_markup', 10, 2);
+
+function my_custom_header_markup($markup, $obj) {
+	if (is_search()) {
+		return ''; // No header markup on search pages
+	}
+
+	return $markup; // Return original markup for non-search pages
+}
