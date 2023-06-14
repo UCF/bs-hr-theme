@@ -174,3 +174,42 @@ function cf_search_distinct( $where ) {
 	return $where;
 }
 add_filter( 'posts_distinct', 'cf_search_distinct' );
+
+/**
+ * Returns search results page header
+ *
+ * @author Mike Setzer
+ * @since 0.0.0
+ * @param mixed $obj A queried object (e.g. WP_Post, WP_Term), or null
+ * @return string Header title text
+ **/
+
+add_filter('ucfwp_get_header_title_before', 'my_custom_search_title', 10, 2);
+
+function my_custom_search_title($title, $obj) {
+	if (is_search()) {
+		$title = get_search_query();
+	}
+
+	return $title;
+}
+
+/**
+ * Returns search result page subtitle
+ *
+ * @author Mike Setzer
+ * @since 0.0.0
+ * @param mixed $obj A queried object (e.g. WP_Post, WP_Term), or null
+ * @return string Header subtitle text
+ **/
+
+add_filter('ucfwp_get_header_subtitle_before', 'my_custom_search_subtitle', 10, 2);
+
+function my_custom_search_subtitle($subtitle, $obj) {
+	if (is_search()) {
+		$subtitle = "Search Results";
+	}
+
+	return $subtitle;
+}
+
