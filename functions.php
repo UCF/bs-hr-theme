@@ -184,7 +184,7 @@ add_filter( 'posts_distinct', 'cf_search_distinct' );
  * @return string Header title text
  **/
 
-add_filter('ucfwp_get_header_title_before', 'my_custom_search_title', 10, 2);
+/*add_filter('ucfwp_get_header_title_before', 'my_custom_search_title', 10, 2);
 
 function my_custom_search_title($title, $obj) {
 	if (is_search()) {
@@ -192,7 +192,7 @@ function my_custom_search_title($title, $obj) {
 	}
 
 	return $title;
-}
+}*/
 
 /**
  * Returns search result page subtitle
@@ -203,7 +203,7 @@ function my_custom_search_title($title, $obj) {
  * @return string Header subtitle text
  **/
 
-add_filter('ucfwp_get_header_subtitle_before', 'my_custom_search_subtitle', 10, 2);
+/*add_filter('ucfwp_get_header_subtitle_before', 'my_custom_search_subtitle', 10, 2);
 
 function my_custom_search_subtitle($subtitle, $obj) {
 	if (is_search()) {
@@ -211,7 +211,7 @@ function my_custom_search_subtitle($subtitle, $obj) {
 	}
 
 	return $subtitle;
-}
+}*/
 
 /**
  * Prevents UCFWP header from rendering on search pages
