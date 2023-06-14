@@ -11,7 +11,6 @@
 				<div class="container">
 					<div class="d-inline-block bg-primary-t-1">
 						<h1 class="header-title">"<?php the_search_query(); ?>"</h1><br/>
-						<h2>Search Results</h2>
 					</div>
 					<div class="clearfix"></div>
 					<div class="d-inline-block bg-inverse">
