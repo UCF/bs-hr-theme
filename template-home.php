@@ -404,21 +404,21 @@ $backgroundphotonews = get_field('background_photo_news');
 								$alt_text = get_post_meta( $thumbnail_id, '_wp_attachment_image_alt', true );
 								?>
 								<li class="row">
-									<!-- Left Column for Images -->
-									<div class="col-md-4">
-										<img src="<?php if ( has_post_thumbnail() ) : echo the_post_thumbnail_url(); endif; ?>" alt="<?php echo esc_attr($alt_text); ?>" class="img-fluid mb-2" />
-										<img src="<?php echo esc_url( get_stylesheet_directory_uri()); ?>/img/icon_arrow.png" class="img-fluid arrowbtn" />
-									</div>
+									<a href="<?php the_permalink(); ?>" class="d-block w-100">
+										<!-- Left Column for Images -->
+										<div class="col-md-4 position-relative">
+											<img src="<?php if ( has_post_thumbnail() ) : echo the_post_thumbnail_url(); endif; ?>" alt="<?php echo esc_attr($alt_text); ?>" class="img-fluid" />
+											<img src="<?php echo esc_url( get_stylesheet_directory_uri()); ?>/img/icon_arrow.png" class="img-fluid arrowbtn position-absolute" style="top: 10px; left: 10px;" />
+										</div>
 
-									<!-- Right Column for Title, Category, and Excerpt -->
-									<div class="col-md-8">
-										<a href="<?php the_permalink(); ?>">
+										<!-- Right Column for Title, Category, and Excerpt -->
+										<div class="col-md-8">
 											<div class="title"><?php the_title(); ?></div>
 											<span class="categoryTitle"><?php if (!empty($category)) echo $category[0]->cat_name; ?></span>
 											<span class="category"><?php echo get_the_date('M'); ?> <?php echo get_the_date('Y'); ?></span>
 											<p><?php the_excerpt(); ?></p>
-										</a>
-									</div>
+										</div>
+									</a>
 								</li>
 								<?php
 								wp_reset_postdata();
