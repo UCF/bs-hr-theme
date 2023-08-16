@@ -3801,7 +3801,7 @@ body.search .hero.container-fluid {
 }
 
 .subnav.container-fluid {
-    top: -12px;
+    top: 0px !important;
 }
 
 body.page-template-template-azindex .content ul li {
@@ -3973,41 +3973,45 @@ body.page-template-template-inside .container h3 {
   }
 }
 
-.orgchartinfoblock a.button.black img {
-  display: none;
+/* Fixing search results (and no results) display */
+body.search.search-results .hero.container-fluid,
+body.search.search-no-results .hero.container-fluid{
+    padding-top: 50px;
+    height: auto!important;
+    padding-bottom: 50px;
+    background: #000!important;
 }
 
-.orgchartinfoblock a.button.black {
-  padding-left:40px;
-  position:relative;
+body.search.search-results .hero .headerText h2,
+body.search.search-no-results .hero .headerText h2 {
+    font-size: 16px;
+    background: #404040;
 }
 
-.orgchartinfoblock a.button.black:before {
-  content:'';
-  background:url('/wp-content/themes/bs-hr-theme/img/icon_link.png') no-repeat center center;
-  background-size:cover;
-  width:30px;
-  height:30px;
-  display:inline-block;
-  position:absolute;
-  left:20px;
-  top:7px;
+body.search.search-results .hero .headerText h1,
+body.search.search-no-results .hero .headerText h1 {
+    font-size: 30px;
+    font-weight: 700!important;
 }
 
-div.hero.video.container-fluid {
-  overflow:hidden;
+body.search-results .header-media-background-wrap,
+body.search-results .header-media-controlfix,
+body.search-no-results .header-media-background-wrap,
+body.search-no-results .header-media-controlfix {
+    display: none;
 }
 
-.prospective-video {
-  width: 100% !important;
-  height: 280px !important;
-}
-.azcontentbox > .container > .content > .alphafilelist > ul > li {
-  line-height: 1.65 !important;
+body.search-results .header-media-default,
+body.search-no-results .header-media-default {
+    min-height: auto;
 }
 
-@media (max-width: 480px) {
-  #homevideo {
-    /*display: none;*/
-  }
+body.search-results .navbar-custom, .navbar-mainsite,
+body.search-no-results .navbar-custom, .navbar-mainsite {
+    background: #404040 !important;
+    padding: 0px 20px !important;
+}
+
+body.search > header > div > div.header-content {
+  display:none;
 }

@@ -55,7 +55,7 @@
 		}
         ?>
 
-        <?php if ($anchor == "faqs") { /* just grab faqs panel if it exists -- it is hidden in the main template file */ ?>
+        <?php if ($anchor == "faqs" && !is_search()) { /* just grab faqs panel if it exists -- it is hidden in the main template file */ ?>
 
         <!-- Container -->
         <div class="container-fluid content-container <?php echo $background; ?>" id="<?php echo $anchor; ?>">
@@ -126,8 +126,7 @@
 
 								</ul>
 
-                            <?php endif;
-                        } ?>
+                            <?php endif; } ?>
                         <!-- end contact information -->
 
                         <?php echo $sidecontent; ?>

@@ -6,40 +6,6 @@
 ?>
 <?php get_header(); the_post(); ?>
 
-<!-- Hero image and title -->
-<?php if ( get_field('header_image') ) { ?>
-	<div class="hero container-fluid" style="background:url(<?php the_field('header_image');?>) no-repeat center center; background-size:cover;">
-<?php } else { ?>
-	<div class="hero container-fluid" style="background:url(<?php the_field('header_image', 20);?>) no-repeat center center; background-size:cover;">
-		<?php } ?>
-
-		<div class="container">
-			<div class="headerText">
-
-				<h1>
-
-					<?php if ( get_field( 'page_title' ) ): ?>
-						<?php the_field('page_title'); ?>
-					<?php else: ?>
-						<?php echo $post->post_title; ?>
-					<?php endif; ?>
-
-				</h1><br/>
-
-				<h2>
-
-					<?php if( get_field('page_subtitle') ): ?>
-						<?php the_field('page_subtitle'); ?>
-					<?php else:
-						$parent_title = get_the_title($post->post_parent);?>
-						<?php echo $parent_title; ?>
-					<?php endif; ?>
-
-				</h2>
-
-			</div>
-		</div>
-	</div>
 
 <!-- Anchor navigation below hero -->
 <div class="subnav container-fluid">
@@ -110,7 +76,7 @@
 						'name' => $documentName,
 						'url' => $fileurl
 					);
-					//If the first character is a letter, store in letter array
+				//If the first character is a letter, store in letter array
 				} else {
 					$documents[$firstChar][] = array(
 						'name' => $documentName,
@@ -165,7 +131,7 @@
 	<div class="container">
 		<div class="row nav">
 			<div class="left azdropdown col-12">
-				<select class="custom-select fileselect" id="fileselect">
+				  <select class="custom-select fileselect" id="fileselect">
 					<option selected>Choose a category to filter by.</option>
 					<option value="benefits">Benefits</option>
 					<option value="classification-and-compensation">Classification and Compensation</option>
@@ -180,7 +146,7 @@
 					<option value="payroll">Payroll</option>
 					<option value="policies-and-compliance">Policies and Compliance</option>
 					<option value="retirement-and-retirees">Retirement and Retirees</option>
-				</select>
+				  </select>
 			</div>
 		</div>
 		<div class="row content">
@@ -240,5 +206,7 @@
 		</div>
 	</div>
 </div>
+
+
 
 <?php get_footer(); ?>
