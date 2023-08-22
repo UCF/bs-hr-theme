@@ -1766,7 +1766,7 @@ body.page-template-template-classcomp ul.navSide {
 /* AZ Index */
 body.page-template-template-azindex .subnav {
     background: transparent;
-    top: -72px;
+    top: -72px !important;
     margin-bottom: -72px;
     position: relative;
     display: block;
@@ -3538,10 +3538,6 @@ ul.formsNav li a {
 
 ul.formsNav li {
     margin-right: 0px !important;
-}
-
-body.page-template-template-azindex .subnav {
-    top: -65px !important;
 }
 
 ul.alphaLinks li a {
