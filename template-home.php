@@ -394,7 +394,8 @@ $backgroundphotonews = get_field('background_photo_news');
 						)
 					);
 
-					if( $posts ) { ?>
+					//Two column version with images on the left, fallback to single column if no image
+					/*if( $posts ) { ?>
 
 						<ul class="posts">
 							<?php foreach( $posts as $post ) {
@@ -430,7 +431,34 @@ $backgroundphotonews = get_field('background_photo_news');
 							} ?>
 						</ul>
 
+					<?php };*/
+
+					//Single column version, no image
+					if( $posts ) { ?>
+						<ul class="posts">
+							<?php foreach( $posts as $post ) {
+								setup_postdata( $post );
+								$category = get_the_category();
+								?>
+								<li>
+									<a href="<?php the_permalink(); ?>" class="d-block w-100">
+										<div class="row">
+											<!-- Full Width Column for Title, Category, and Excerpt -->
+											<div class="col-md-12">
+												<div class="title"><?php the_title(); ?></div>
+												<span class="categoryTitle"><?php if (!empty($category)) echo $category[0]->cat_name; ?></span>
+												<span class="category"><?php echo get_the_date('M'); ?> <?php echo get_the_date('Y'); ?></span>
+												<p><?php the_excerpt(); ?></p>
+											</div>
+										</div>
+									</a>
+								</li>
+								<?php
+								wp_reset_postdata();
+							} ?>
+						</ul>
 					<?php };
+
 					?>
 
 
