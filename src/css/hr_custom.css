@@ -3541,7 +3541,7 @@ ul.formsNav li {
 }
 
 body.page-template-template-azindex .subnav {
-    top: -65px;
+    top: -65px !important;
 }
 
 ul.alphaLinks li a {
